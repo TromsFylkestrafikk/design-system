@@ -1,5 +1,5 @@
-# Design system for Troms Fylkeskommune
+# 🎨 Design system for Troms Fylkeskommune
 
-- /tokens
+- `/tokens`
 
 Contains raw design tokens
