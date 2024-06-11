@@ -1,2 +1,5 @@
-# design-system
-Contains raw design tokens and compiled variables for various tech stacks (TS, CSS, ...)
+# Design system for Troms Fylkeskommune
+
+- /tokens
+
+Contains raw design tokens

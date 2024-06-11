@@ -1,0 +1,420 @@
+{
+  "_Text": {
+    "Primary": {
+      "WW": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "BB": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "WB": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "BW": {
+        "$type": "color",
+        "$value": "#000000"
+      }
+    },
+    "Secondary": {
+      "WW": {
+        "$type": "color",
+        "$value": "#555e65"
+      },
+      "BB": {
+        "$type": "color",
+        "$value": "#555e65"
+      },
+      "WB": {
+        "$type": "color",
+        "$value": "#555e65"
+      },
+      "BW": {
+        "$type": "color",
+        "$value": "#555e65"
+      }
+    },
+    "Disabled": {
+      "WW": {
+        "$type": "color",
+        "$value": "#a9aeb1"
+      },
+      "BB": {
+        "$type": "color",
+        "$value": "#a9aeb1"
+      },
+      "WB": {
+        "$type": "color",
+        "$value": "#a9aeb1"
+      },
+      "BW": {
+        "$type": "color",
+        "$value": "#a9aeb1"
+      }
+    }
+  },
+  "Background": {
+    "Neutral": {
+      "0": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "1": {
+        "$type": "color",
+        "$value": "#eff5f8"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#dfe4e7"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#e4e4e4"
+      }
+    },
+    "Accent": {
+      "0": {
+        "$type": "color",
+        "$value": "#007ab5"
+      },
+      "1": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#cde9e3"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#0d6569"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#ece58d"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#007ab5"
+      }
+    }
+  },
+  "Foreground": {
+    "Light": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "Dark": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    }
+  },
+  "Zone": {
+    "From": {
+      "$type": "color",
+      "$value": "#ffffff"
+    },
+    "To": {
+      "$type": "color",
+      "$value": "#ffffff"
+    }
+  },
+  "Status": {
+    "Success": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#82b962"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "Info": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#8dd4cd"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "Warning": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#f8da00"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "Error": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#f15629"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    }
+  },
+  "Interactive": {
+    "0": {
+      "Default": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "#007fba"
+      },
+      "Active": {
+        "$type": "color",
+        "$value": "#cde9e3"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#d6d7db"
+      },
+      "Outline": {
+        "$type": "color",
+        "$value": "#0d6569"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "#a40f21"
+      }
+    },
+    "1": {
+      "Default": {
+        "$type": "color",
+        "$value": "#012c44"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "#00395a"
+      },
+      "Active": {
+        "$type": "color",
+        "$value": "#001622"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#d6d7db"
+      },
+      "Outline": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "#a40f21"
+      }
+    },
+    "2": {
+      "Default": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "#e5f3f4"
+      },
+      "Active": {
+        "$type": "color",
+        "$value": "#cde9e3"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#d6d7db"
+      },
+      "Outline": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "#a40f21"
+      }
+    },
+    "3": {
+      "Default": {
+        "$type": "color",
+        "$value": "#82b962"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "#b8d4a8"
+      },
+      "Active": {
+        "$type": "color",
+        "$value": "#284320"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#d4e5d2"
+      },
+      "Outline": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "#a40f21"
+      }
+    },
+    "Destructive": {
+      "Default": {
+        "$type": "color",
+        "$value": "#f18176"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "#efb8b2"
+      },
+      "Active": {
+        "$type": "color",
+        "$value": "#551125"
+      },
+      "Disabled": {
+        "$type": "color",
+        "$value": "#f4d8d5"
+      },
+      "Outline": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Destructive": {
+        "$type": "color",
+        "$value": "#a40f21"
+      }
+    }
+  },
+  "Transport": {
+    "City": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#82b962"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#82b962"
+      }
+    },
+    "Region": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#005685"
+      }
+    },
+    "Airport Express": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#005685"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#005685"
+      }
+    },
+    "Flexible": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#f15659"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#f15659"
+      }
+    },
+    "Boat": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#007fba"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#007fba"
+      }
+    },
+    "Train": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#551125"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#551125"
+      }
+    },
+    "Scooter": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#464a00"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#464a00"
+      }
+    },
+    "Car": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#6f5468"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#6f5468"
+      }
+    },
+    "Bike": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#7d0d31"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#7d0d31"
+      }
+    },
+    "Other": {
+      "Primary": {
+        "$type": "color",
+        "$value": "#555e65"
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": "#555e65"
+      }
+    }
+  }
+}

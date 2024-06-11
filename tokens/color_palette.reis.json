@@ -1,0 +1,828 @@
+{
+  "Gray": {
+    "0": {
+      "Background": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "50": {
+      "Background": {
+        "$type": "color",
+        "$value": "#f1f2f2"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#e3e5e6"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "150": {
+      "Background": {
+        "$type": "color",
+        "$value": "#d5d7d9"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#c7cacc"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#a9aeb1"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#8d9398"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#6f777d"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#555e65"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#37424a"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#2b343a"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "850": {
+      "Background": {
+        "$type": "color",
+        "$value": "#242b30"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#1a2024"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "950": {
+      "Background": {
+        "$type": "color",
+        "$value": "#101315"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "1000": {
+      "Background": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Green": {
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#e5e8b8"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#c9cf6b"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#a2ad00"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#909a00"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#757d00"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#5b6100"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#464a00"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#323600"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#1f2100"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Cyan": {
+    "50": {
+      "Background": {
+        "$type": "color",
+        "$value": "#def5f8"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#bfedf1"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#71d6e0"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#62bac3"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#539ca4"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#448086"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#356569"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#294d51"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#1d383a"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#122224"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Blue": {
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#d4e9ec"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#a6d1d9"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#75b8c4"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#429eae"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#007c92"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#006678"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#004e5c"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#003943"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#002329"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Burgundy": {
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#e8e3e6"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#d0c7ce"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#b7a9b3"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#a08e9b"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#867080"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#6f5468"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#5b3c53"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#4b2942"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#2c1827"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Yellow": {
+    "50": {
+      "Background": {
+        "$type": "color",
+        "$value": "#fbf9da"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#f0e973"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#e4d700"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#c6ae00"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#af9000"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#977000"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#815200"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#6f3a00"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#5c2000"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#460200"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Orange": {
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#f5e1d4"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#eac1a5"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#dea076"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#d27c41"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#c75b12"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#97450e"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#73350a"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#542608"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#341805"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  },
+  "Red": {
+    "50": {
+      "Background": {
+        "$type": "color",
+        "$value": "#f4e1e7"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "100": {
+      "Background": {
+        "$type": "color",
+        "$value": "#eed2db"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "200": {
+      "Background": {
+        "$type": "color",
+        "$value": "#e4b8c6"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "300": {
+      "Background": {
+        "$type": "color",
+        "$value": "#d692a7"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "400": {
+      "Background": {
+        "$type": "color",
+        "$value": "#c76b89"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "500": {
+      "Background": {
+        "$type": "color",
+        "$value": "#b74166"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Dark.Primary}"
+      }
+    },
+    "600": {
+      "Background": {
+        "$type": "color",
+        "$value": "#a51140"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "700": {
+      "Background": {
+        "$type": "color",
+        "$value": "#7d0d31"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "800": {
+      "Background": {
+        "$type": "color",
+        "$value": "#5c0a24"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    },
+    "900": {
+      "Background": {
+        "$type": "color",
+        "$value": "#380616"
+      },
+      "Foreground": {
+        "$type": "color",
+        "$value": "{theme.Foreground.Light.Primary}"
+      }
+    }
+  }
+}
