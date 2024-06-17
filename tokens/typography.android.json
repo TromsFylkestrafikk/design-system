@@ -1,16 +1,16 @@
 {
-  "Size": {
+  "Sizes": {
     "Primary": {
-      "$type": "number",
-      "$value": 16
+      "type": "number",
+      "value": 16
     },
     "Secondary": {
-      "$type": "number",
-      "$value": 14
+      "type": "number",
+      "value": 14
     },
     "Tertiary": {
-      "$type": "number",
-      "$value": 12
+      "type": "number",
+      "value": 12
     }
   }
 }

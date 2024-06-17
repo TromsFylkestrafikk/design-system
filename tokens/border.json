@@ -1,26 +1,26 @@
 {
   "Radius": {
-    "Small": {
-      "$type": "number",
-      "$value": 4
-    },
-    "Medium": {
-      "$type": "number",
-      "$value": 8
-    },
     "Circle": {
-      "$type": "number",
-      "$value": 20
+      "type": "number",
+      "value": 20
+    },
+    "Small": {
+      "type": "number",
+      "value": 4
+    },
+    "Regular": {
+      "type": "number",
+      "value": 8
     }
   },
   "Width": {
     "Slim": {
-      "$type": "number",
-      "$value": 1
+      "type": "number",
+      "value": 1
     },
     "Medium": {
-      "$type": "number",
-      "$value": 2
+      "type": "number",
+      "value": 2
     }
   }
 }

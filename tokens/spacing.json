@@ -1,22 +1,22 @@
 {
-  "xSmall": {
-    "$type": "number",
-    "$value": 4
+  "XSmall": {
+    "type": "number",
+    "value": 4
   },
   "Small": {
-    "$type": "number",
-    "$value": 8
+    "type": "number",
+    "value": 8
   },
   "Medium": {
-    "$type": "number",
-    "$value": 12
+    "type": "number",
+    "value": 12
   },
   "Large": {
-    "$type": "number",
-    "$value": 20
+    "type": "number",
+    "value": 20
   },
   "xLarge": {
-    "$type": "number",
-    "$value": 24
+    "type": "number",
+    "value": 24
   }
 }
