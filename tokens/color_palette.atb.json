@@ -432,9 +432,9 @@
       "Foreground": {
         "type": "color",
         "value": {
-          "Primary": "{Foreground.Light.Primary}",
-          "Secondary": "{Foreground.Light.Secondary}",
-          "Disabled": "{Foreground.Light.Disabled}"
+          "Primary": "{Foreground.Dark.Primary}",
+          "Secondary": "{Foreground.Dark.Secondary}",
+          "Disabled": "{Foreground.Dark.Disabled}"
         }
       }
     },

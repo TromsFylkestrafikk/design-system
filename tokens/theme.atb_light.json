@@ -1,4 +1,96 @@
 {
+  "Text": {
+    "Primary": {
+      "WW": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.0.Background}",
+          "Foreground": "{Gray.0.Foreground}"
+        }
+      },
+      "BB": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.1000.Background}",
+          "Foreground": "{Gray.1000.Foreground}"
+        }
+      },
+      "WB": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.0.Background}",
+          "Foreground": "{Gray.0.Foreground}"
+        }
+      },
+      "BW": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.1000.Background}",
+          "Foreground": "{Gray.1000.Foreground}"
+        }
+      }
+    },
+    "Secondary": {
+      "WW": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        }
+      },
+      "BB": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        }
+      },
+      "WB": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        }
+      },
+      "BW": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        }
+      }
+    },
+    "Disabled": {
+      "WW": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.300.Background}",
+          "Foreground": "{Gray.300.Foreground}"
+        }
+      },
+      "BB": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.300.Background}",
+          "Foreground": "{Gray.300.Foreground}"
+        }
+      },
+      "WB": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.300.Background}",
+          "Foreground": "{Gray.300.Foreground}"
+        }
+      },
+      "BW": {
+        "type": "color",
+        "value": {
+          "Background": "{Gray.300.Background}",
+          "Foreground": "{Gray.300.Foreground}"
+        }
+      }
+    }
+  },
   "Foreground": {
     "Light": {
       "Primary": {
@@ -99,8 +191,74 @@
       "5": {
         "type": "color",
         "value": {
-          "Background": "{Blue.100.Background}",
-          "Foreground": "{Blue.100.Foreground}"
+          "Background": "{Blue.200.Background}",
+          "Foreground": "{Blue.200.Foreground}"
+        }
+      }
+    }
+  },
+  "Status": {
+    "Success": {
+      "Primary": {
+        "type": "color",
+        "value": {
+          "Background": "{Green.400.Background}",
+          "Foreground": "{Green.400.Foreground}"
+        }
+      },
+      "Secondary": {
+        "type": "color",
+        "value": {
+          "Background": "{Green.100.Background}",
+          "Foreground": "{Green.100.Foreground}"
+        }
+      }
+    },
+    "Info": {
+      "Primary": {
+        "type": "color",
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        }
+      },
+      "Secondary": {
+        "type": "color",
+        "value": {
+          "Background": "{Cyan.50.Background}",
+          "Foreground": "{Cyan.50.Foreground}"
+        }
+      }
+    },
+    "Warning": {
+      "Primary": {
+        "type": "color",
+        "value": {
+          "Background": "{Yellow.200.Background}",
+          "Foreground": "{Yellow.200.Foreground}"
+        }
+      },
+      "Secondary": {
+        "type": "color",
+        "value": {
+          "Background": "{Yellow.50.Background}",
+          "Foreground": "{Yellow.50.Foreground}"
+        }
+      }
+    },
+    "Error": {
+      "Primary": {
+        "type": "color",
+        "value": {
+          "Background": "{Red.500.Background}",
+          "Foreground": "{Red.500.Foreground}"
+        }
+      },
+      "Secondary": {
+        "type": "color",
+        "value": {
+          "Background": "{Red.50.Background}",
+          "Foreground": "{Red.50.Foreground}"
         }
       }
     }
@@ -323,72 +481,6 @@
         "value": {
           "Background": "{Red.600.Background}",
           "Foreground": "{Red.600.Foreground}"
-        }
-      }
-    }
-  },
-  "Status": {
-    "Success": {
-      "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.400.Background}",
-          "Foreground": "{Green.400.Foreground}"
-        }
-      },
-      "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.100.Background}",
-          "Foreground": "{Green.100.Foreground}"
-        }
-      }
-    },
-    "Info": {
-      "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
-      },
-      "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Cyan.50.Background}",
-          "Foreground": "{Cyan.50.Foreground}"
-        }
-      }
-    },
-    "Warning": {
-      "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Yellow.200.Background}",
-          "Foreground": "{Yellow.200.Foreground}"
-        }
-      },
-      "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Yellow.50.Background}",
-          "Foreground": "{Yellow.50.Foreground}"
-        }
-      }
-    },
-    "Error": {
-      "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.500.Background}",
-          "Foreground": "{Red.500.Foreground}"
-        }
-      },
-      "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.50.Background}",
-          "Foreground": "{Red.50.Foreground}"
         }
       }
     }

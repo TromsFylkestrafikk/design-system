@@ -1,16 +1,16 @@
 {
   "Radius": {
-    "Circle": {
-      "type": "number",
-      "value": 20
-    },
     "Small": {
       "type": "number",
       "value": 4
     },
-    "Regular": {
+    "Medium": {
       "type": "number",
       "value": 8
+    },
+    "Circle": {
+      "type": "number",
+      "value": 20
     }
   },
   "Width": {
