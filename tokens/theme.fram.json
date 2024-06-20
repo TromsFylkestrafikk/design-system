@@ -2,573 +2,363 @@
   "Foreground": {
     "Light": {
       "Primary": {
-        "type": "color",
-        "value": "{Gray.0.Background}"
+        "value": "#ffffff",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": "{Gray.100.Background}"
+        "value": "#ffffff",
+        "type": "color"
       },
       "Disabled": {
-        "type": "color",
-        "value": "{Gray.300.Background}"
+        "value": "#ffffff",
+        "type": "color"
       }
     },
     "Dark": {
       "Primary": {
-        "type": "color",
-        "value": "{Gray.1000.Background}"
+        "value": "#ffffff",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": "{Gray.100.Background}"
+        "value": "#ffffff",
+        "type": "color"
       },
       "Disabled": {
-        "type": "color",
-        "value": "{Gray.300.Background}"
+        "value": "#ffffff",
+        "type": "color"
       }
     }
   },
   "Background": {
     "Neutral": {
       "0": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.1000.Background}",
-          "Foreground": "{Gray.1000.Foreground}"
-        }
+        "value": "#ffffff",
+        "type": "color"
       },
       "1": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.850.Background}",
-          "Foreground": "{Gray.850.Foreground}"
-        }
+        "value": "#eff5f8",
+        "type": "color"
       },
       "2": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.700.Background}",
-          "Foreground": "{Gray.700.Foreground}"
-        }
+        "value": "#dfe4e7",
+        "type": "color"
       },
       "3": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.600.Background}",
-          "Foreground": "{Gray.600.Foreground}"
-        }
+        "value": "#e4e4e4",
+        "type": "color"
       }
     },
     "Accent": {
       "0": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.700.Background}",
-          "Foreground": "{Gray.700.Foreground}"
-        }
+        "value": "#007ab5",
+        "type": "color"
       },
       "1": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.600.Background}",
-          "Foreground": "{Gray.600.Foreground}"
-        }
+        "value": "#005685",
+        "type": "color"
       },
       "2": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.100.Background}",
-          "Foreground": "{Blue.100.Foreground}"
-        }
+        "value": "#cde9e3",
+        "type": "color"
       },
       "3": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
+        "value": "#0d6569",
+        "type": "color"
       },
       "4": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.100.Background}",
-          "Foreground": "{Green.100.Foreground}"
-        }
+        "value": "#ece58d",
+        "type": "color"
       },
       "5": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.800.Background}",
-          "Foreground": "{Gray.800.Foreground}"
-        }
-      }
-    }
-  },
-  "Interactive": {
-    "0": {
-      "Default": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
-      },
-      "Hover": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.600.Background}",
-          "Foreground": "{Blue.600.Foreground}"
-        }
-      },
-      "Active": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.200.Background}",
-          "Foreground": "{Blue.200.Foreground}"
-        }
-      },
-      "Disabled": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.100.Background}",
-          "Foreground": "{Blue.100.Foreground}"
-        }
-      },
-      "Outline": {
-        "type": "color",
-        "value": {
-          "Background": "{Cyan.200.Background}",
-          "Foreground": "{Cyan.200.Foreground}"
-        }
-      },
-      "Destructive": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.300.Background}",
-          "Foreground": "{Red.300.Foreground}"
-        }
-      }
-    },
-    "1": {
-      "Default": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.600.Background}",
-          "Foreground": "{Gray.600.Foreground}"
-        }
-      },
-      "Hover": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.500.Background}",
-          "Foreground": "{Gray.500.Foreground}"
-        }
-      },
-      "Active": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.900.Background}",
-          "Foreground": "{Gray.900.Foreground}"
-        }
-      },
-      "Disabled": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.200.Background}",
-          "Foreground": "{Gray.200.Foreground}"
-        }
-      },
-      "Outline": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
-      },
-      "Destructive": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.300.Background}",
-          "Foreground": "{Red.300.Foreground}"
-        }
-      }
-    },
-    "2": {
-      "Default": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.1000.Background}",
-          "Foreground": "{Gray.1000.Foreground}"
-        }
-      },
-      "Hover": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.900.Background}",
-          "Foreground": "{Blue.900.Foreground}"
-        }
-      },
-      "Active": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.700.Background}",
-          "Foreground": "{Blue.700.Foreground}"
-        }
-      },
-      "Disabled": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.1000.Background}",
-          "Foreground": "{Gray.1000.Foreground}"
-        }
-      },
-      "Outline": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
-      },
-      "Destructive": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.300.Background}",
-          "Foreground": "{Red.300.Foreground}"
-        }
-      }
-    },
-    "3": {
-      "Default": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.700.Background}",
-          "Foreground": "{Blue.700.Foreground}"
-        }
-      },
-      "Hover": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.800.Background}",
-          "Foreground": "{Blue.800.Foreground}"
-        }
-      },
-      "Active": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.800.Background}",
-          "Foreground": "{Blue.800.Foreground}"
-        }
-      },
-      "Disabled": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.600.Background}",
-          "Foreground": "{Gray.600.Foreground}"
-        }
-      },
-      "Outline": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.100.Background}",
-          "Foreground": "{Blue.100.Foreground}"
-        }
-      },
-      "Destructive": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.600.Background}",
-          "Foreground": "{Red.600.Foreground}"
-        }
-      }
-    },
-    "Destructive": {
-      "Default": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.600.Background}",
-          "Foreground": "{Red.600.Foreground}"
-        }
-      },
-      "Hover": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.500.Background}",
-          "Foreground": "{Red.500.Foreground}"
-        }
-      },
-      "Active": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.900.Background}",
-          "Foreground": "{Red.900.Foreground}"
-        }
-      },
-      "Disabled": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.100.Background}",
-          "Foreground": "{Red.100.Foreground}"
-        }
-      },
-      "Outline": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
-      },
-      "Destructive": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.300.Background}",
-          "Foreground": "{Red.300.Foreground}"
-        }
+        "value": "#007ab5",
+        "type": "color"
       }
     }
   },
   "Status": {
     "Success": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.400.Background}",
-          "Foreground": "{Green.400.Foreground}"
-        }
+        "value": "#82b962",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.700.Background}",
-          "Foreground": "{Green.700.Foreground}"
-        }
+        "value": "#ffffff",
+        "type": "color"
       }
     },
     "Info": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
+        "value": "#8dd4cd",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.800.Background}",
-          "Foreground": "{Blue.800.Foreground}"
-        }
+        "value": "#ffffff",
+        "type": "color"
       }
     },
     "Warning": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Yellow.200.Background}",
-          "Foreground": "{Yellow.200.Foreground}"
-        }
+        "value": "#f8da00",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.900.Background}",
-          "Foreground": "{Green.900.Foreground}"
-        }
+        "value": "#ffffff",
+        "type": "color"
       }
     },
     "Error": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.500.Background}",
-          "Foreground": "{Red.500.Foreground}"
-        }
+        "value": "#f15629",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.900.Background}",
-          "Foreground": "{Red.900.Foreground}"
-        }
+        "value": "#ffffff",
+        "type": "color"
+      }
+    }
+  },
+  "Interactive": {
+    "0": {
+      "Default": {
+        "value": "#005685",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "#007fba",
+        "type": "color"
+      },
+      "Active": {
+        "value": "#cde9e3",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#d6d7db",
+        "type": "color"
+      },
+      "Outline": {
+        "value": "#0d6569",
+        "type": "color"
+      },
+      "Destructive": {
+        "value": "#a40f21",
+        "type": "color"
+      }
+    },
+    "1": {
+      "Default": {
+        "value": "#012c44",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "#00395a",
+        "type": "color"
+      },
+      "Active": {
+        "value": "#001622",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#d6d7db",
+        "type": "color"
+      },
+      "Outline": {
+        "value": "#005685",
+        "type": "color"
+      },
+      "Destructive": {
+        "value": "#a40f21",
+        "type": "color"
+      }
+    },
+    "2": {
+      "Default": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "#e5f3f4",
+        "type": "color"
+      },
+      "Active": {
+        "value": "#cde9e3",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#d6d7db",
+        "type": "color"
+      },
+      "Outline": {
+        "value": "#005685",
+        "type": "color"
+      },
+      "Destructive": {
+        "value": "#a40f21",
+        "type": "color"
+      }
+    },
+    "3": {
+      "Default": {
+        "value": "#82b962",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "#b8d4a8",
+        "type": "color"
+      },
+      "Active": {
+        "value": "#284320",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#d4e5d2",
+        "type": "color"
+      },
+      "Outline": {
+        "value": "#005685",
+        "type": "color"
+      },
+      "Destructive": {
+        "value": "#a40f21",
+        "type": "color"
+      }
+    },
+    "Destructive": {
+      "Default": {
+        "value": "#f18176",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "#efb8b2",
+        "type": "color"
+      },
+      "Active": {
+        "value": "#551125",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "#f4d8d5",
+        "type": "color"
+      },
+      "Outline": {
+        "value": "#005685",
+        "type": "color"
+      },
+      "Destructive": {
+        "value": "#a40f21",
+        "type": "color"
       }
     }
   },
   "Transport": {
     "City": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.300.Background}",
-          "Foreground": "{Green.300.Foreground}"
-        }
+        "value": "#82b962",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.400.Background}",
-          "Foreground": "{Green.400.Foreground}"
-        }
+        "value": "#82b962",
+        "type": "color"
       }
     },
     "Region": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.500.Background}",
-          "Foreground": "{Blue.500.Foreground}"
-        }
+        "value": "#005685",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Blue.600.Background}",
-          "Foreground": "{Blue.600.Foreground}"
-        }
+        "value": "#005685",
+        "type": "color"
       }
     },
-    "Airport Express": {
+    "AirportExpress": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.600.Background}",
-          "Foreground": "{Red.600.Foreground}"
-        }
+        "value": "#005685",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.700.Background}",
-          "Foreground": "{Red.700.Foreground}"
-        }
+        "value": "#005685",
+        "type": "color"
       }
     },
     "Flexible": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Orange.500.Background}",
-          "Foreground": "{Orange.500.Foreground}"
-        }
+        "value": "#f15659",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Orange.600.Background}",
-          "Foreground": "{Orange.600.Foreground}"
-        }
+        "value": "#f15659",
+        "type": "color"
       }
     },
     "Boat": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Cyan.200.Background}",
-          "Foreground": "{Cyan.200.Foreground}"
-        }
+        "value": "#007fba",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Cyan.400.Background}",
-          "Foreground": "{Cyan.400.Foreground}"
-        }
+        "value": "#007fba",
+        "type": "color"
       }
     },
     "Train": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Burgundy.800.Background}",
-          "Foreground": "{Burgundy.800.Foreground}"
-        }
+        "value": "#551125",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Burgundy.900.Background}",
-          "Foreground": "{Burgundy.900.Foreground}"
-        }
+        "value": "#551125",
+        "type": "color"
       }
     },
     "Scooter": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.700.Background}",
-          "Foreground": "{Green.700.Foreground}"
-        }
+        "value": "#464a00",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Green.800.Background}",
-          "Foreground": "{Green.800.Foreground}"
-        }
+        "value": "#464a00",
+        "type": "color"
       }
     },
     "Car": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Burgundy.700.Background}",
-          "Foreground": "{Burgundy.700.Foreground}"
-        }
+        "value": "#6f5468",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Burgundy.800.Background}",
-          "Foreground": "{Burgundy.800.Foreground}"
-        }
+        "value": "#6f5468",
+        "type": "color"
       }
     },
     "Bike": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.700.Background}",
-          "Foreground": "{Red.700.Foreground}"
-        }
+        "value": "#7d0d31",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Red.800.Background}",
-          "Foreground": "{Red.800.Foreground}"
-        }
+        "value": "#7d0d31",
+        "type": "color"
       }
     },
     "Other": {
       "Primary": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.200.Background}",
-          "Foreground": "{Gray.200.Foreground}"
-        }
+        "value": "#555e65",
+        "type": "color"
       },
       "Secondary": {
-        "type": "color",
-        "value": {
-          "Background": "{Gray.400.Background}",
-          "Foreground": "{Gray.400.Foreground}"
-        }
+        "value": "#555e65",
+        "type": "color"
       }
     }
   },
   "Zone": {
     "From": {
-      "type": "color",
-      "value": {
-        "Background": "{Green.300.Background}",
-        "Foreground": "{Green.300.Foreground}"
-      }
+      "value": "#ffffff",
+      "type": "color"
     },
     "To": {
-      "type": "color",
-      "value": {
-        "Background": "{Cyan.200.Background}",
-        "Foreground": "{Cyan.200.Foreground}"
-      }
+      "value": "#ffffff",
+      "type": "color"
     }
   }
 }

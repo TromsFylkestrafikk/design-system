@@ -9,37 +9,52 @@ import StyleDictionary from 'style-dictionary';
 import type { Config, TransformedToken } from 'style-dictionary/types';
 import { fileHeader } from 'style-dictionary/utils';
 
-import * as path from 'path';
+import path from 'path';
 
 const srcDir = 'tokens';
 const outDir = 'dist';
 
 type ColorPalette = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'troms'
-const palettes: ColorPalette[] = ['atb'];
+const organizations: ColorPalette[] = ['atb'];
 
 type Mode = 'light' | 'dark'
 const modes: Mode[] = ['light', 'dark'];
 
+const toUpperFirstCase = (name: string) => name.charAt(0).toUpperCase() + name.slice(1);
+
+/**
+ * Appends the name of the collection to the file path, such that
+ * it is prepended to the name of the variable (e.g., COLOR-background-neutral-...).
+ */
 StyleDictionary.registerTransform({
   name: 'attribute/append-type',
   type: 'attribute',
   transform: (token: TransformedToken) => {
     const originalPath = token.path;
-    let type = token.filePath?.match(/([^/]+?)(?=\.)/)?.[0];
+    // Extract the collection name from the filename
+    let type = token.filePath.match(/([^/]+?)(?=\.)/)?.[0];
 
     if (!type) return token;
+    // "theme" should be called "color" in variables
     if (type === 'theme') type = 'color';
 
-    const generatedPath = [type.charAt(0).toUpperCase() + type.slice(1), ...token.path];
+    //
+    const generatedPath = [toUpperFirstCase(type), ...token.path];
     return Object.assign(originalPath, generatedPath);
   },
 });
 
+/**
+ * Removes the base colors (color palette) from the final output.
+ */
 StyleDictionary.registerFilter({
   name: 'filter-palette',
   filter: (token: TransformedToken) => token.isSource,
 });
 
+/**
+ * Contents of the main CSS file linking the themes
+ */
 const cssIndex = `
 @import url('dark.css') layer(theme.dark);
 @import url('light.css') layer(theme.light);
@@ -56,6 +71,9 @@ const cssIndex = `
   }
 }`;
 
+/**
+ * Contents of the main TypeScript file linking the themes
+ */
 const tsIndex = `
 import Light from "./light.ts"
 import Dark from "./dark.ts"
@@ -65,6 +83,10 @@ export const themes = {
   Dark
 }`;
 
+/**
+ * Outputs a string to a file. Used for generated
+ * linking files defined above.
+ */
 StyleDictionary.registerFormat({
   name: 'index',
   format: async ({ file, options }) => {
@@ -76,6 +98,23 @@ StyleDictionary.registerFormat({
   },
 });
 
+/**
+ * Generates a nested JSON object using the path of each token as key.
+ *
+ * ["Color", "Background", "Neutral", "0"] becomes
+ * {
+ *   "Color": {
+ *     "Background": {
+ *       "Neutral": {
+ *         "0": value
+ *       }
+ *     }
+ *   }
+ * }
+ *
+ * @param tokens Flat list of design tokens
+ * @returns Nested object based on the path of each token
+ */
 const expandToNestedObject = (tokens: TransformedToken[]) => {
   const result = {};
   tokens.forEach((token) => {
@@ -91,12 +130,11 @@ const expandToNestedObject = (tokens: TransformedToken[]) => {
   return result;
 };
 
+/**
+ * Generates the nested JSON object and unquotes its keys.
+ */
 StyleDictionary.registerFormat({
   name: 'typescript/obj',
-  // format: async ({ dictionary, file }) => (await fileHeader({file}) +
-  // 'export default ' +
-  // JSON.stringify(simplifyNode(dictionary.tokens), null, 2).replace(/"([^"]+)":/g, '$1:') +
-  // ';\n')
   format: async ({ dictionary, file }) => (`${await fileHeader({ file })
   }export default ${
     JSON.stringify(expandToNestedObject(dictionary.allTokens), null, 2).replace(/"([^"]+)":/g, '$1:')
@@ -104,25 +142,29 @@ StyleDictionary.registerFormat({
 });
 
 /**
- * Configures where the file should be output
- * and what the name should be for each theme for each organisation
-*/
-const getDestination = ({ palette }: { palette: ColorPalette, mode: Mode}): string => path.join(outDir, `${palette}/`);
+ * Configures where the file should be output in accordance with the organization.
+ *
+ * @param organization Name of the organization
+ * @returns Output folder
+ */
+const getDestination = (organization: ColorPalette): string => path.join(outDir, `${organization}/`);
 
-const getStyleDictionaryConfig = (palette: ColorPalette, mode: Mode): Config => {
-  const destination = getDestination({ palette, mode });
+/**
+ * @param organization Name of the organization
+ * @param mode Theme mode
+ * @returns Style Dictionary config for the org-mode combination
+ */
+const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Config => {
+  const destination = getDestination(organization);
 
   return {
-    log: {
-      warnings: 'warn', // 'warn' | 'error' | 'disabled'
-      verbosity: 'verbose', // 'default' | 'silent' | 'verbose'
-    },
-    include: [`${srcDir}/**/*.${palette}.json`],
-    source: [`${srcDir}/**/*.${palette}_${mode}.json`, `${srcDir}/**/@(border|spacing|typography)*.json`],
+    include: [`${srcDir}/**/*.${organization}.json`],
+    source: [`${srcDir}/**/*.${organization}_${mode}.json`, `${srcDir}/**/@(border|spacing|typography)*.json`],
     platforms: {
       css: {
         buildPath: destination,
         expand: true,
+        // `css` transformGroup with `attribbute/append-type` prepended
         transforms: ['attribute/append-type', 'attribute/cti', 'name/kebab', 'time/seconds', 'html/icon', 'size/rem', 'color/css', 'asset/url', 'fontFamily/css', 'cubicBezier/css', 'strokeStyle/css/shorthand', 'border/css/shorthand', 'typography/css/shorthand', 'transition/css/shorthand', 'shadow/css/shorthand'],
         options: {
           selector: `.${mode}`,
@@ -145,6 +187,7 @@ const getStyleDictionaryConfig = (palette: ColorPalette, mode: Mode): Config => 
       ts: {
         buildPath: destination,
         expand: true,
+        // `js` transformGroup with `attribbute/append-type` prepended
         transforms: ['attribute/append-type', 'attribute/cti', 'name/pascal', 'size/rem', 'color/hex'],
         files: [
           {
@@ -166,11 +209,12 @@ const getStyleDictionaryConfig = (palette: ColorPalette, mode: Mode): Config => 
   };
 };
 
-for (const palette of palettes) {
+// Generate files for each organization-mode combination
+for (const organization of organizations) {
   await Promise.all(
     modes.map((mode) => {
-      console.log(`\n👷 Building ${palette} ${mode} tokens`);
-      return new StyleDictionary(getStyleDictionaryConfig(palette, mode)).buildAllPlatforms();
+      console.log(`\n👷 Building ${organization} ${mode} tokens`);
+      return new StyleDictionary(getStyleDictionaryConfig(organization, mode)).buildAllPlatforms();
     }),
   );
 }

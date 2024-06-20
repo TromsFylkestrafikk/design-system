@@ -1,26 +1,26 @@
 {
   "Radius": {
     "Small": {
-      "type": "number",
-      "value": 4
+      "value": 4,
+      "type": "number"
     },
     "Medium": {
-      "type": "number",
-      "value": 8
+      "value": 8,
+      "type": "number"
     },
     "Circle": {
-      "type": "number",
-      "value": 20
+      "value": 20,
+      "type": "number"
     }
   },
   "Width": {
     "Slim": {
-      "type": "number",
-      "value": 1
+      "value": 1,
+      "type": "number"
     },
     "Medium": {
-      "type": "number",
-      "value": 2
+      "value": 2,
+      "type": "number"
     }
   }
 }

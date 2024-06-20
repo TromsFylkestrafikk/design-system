@@ -2,1150 +2,1150 @@
   "Gray": {
     "0": {
       "Background": {
-        "type": "color",
-        "value": "#ffffff"
+        "value": "#ffffff",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "50": {
       "Background": {
-        "type": "color",
-        "value": "#f1f2f2"
+        "value": "#f1f2f2",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#e3e5e6"
+        "value": "#e3e5e6",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "150": {
       "Background": {
-        "type": "color",
-        "value": "#d5d7d9"
+        "value": "#d5d7d9",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#c7cacc"
+        "value": "#c7cacc",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#a9aeb1"
+        "value": "#a9aeb1",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#8d9398"
+        "value": "#8d9398",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#6f777d"
+        "value": "#6f777d",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#555e65"
+        "value": "#555e65",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#37424a"
+        "value": "#37424a",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#2b343a"
+        "value": "#2b343a",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "850": {
       "Background": {
-        "type": "color",
-        "value": "#242b30"
+        "value": "#242b30",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#1a2024"
+        "value": "#1a2024",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "950": {
       "Background": {
-        "type": "color",
-        "value": "#101315"
+        "value": "#101315",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "1000": {
       "Background": {
-        "type": "color",
-        "value": "#000000"
+        "value": "#000000",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Green": {
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#e5e8b8"
+        "value": "#e5e8b8",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#c9cf6b"
+        "value": "#c9cf6b",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#a2ad00"
+        "value": "#a2ad00",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#909a00"
+        "value": "#909a00",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#757d00"
+        "value": "#757d00",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#5b6100"
+        "value": "#5b6100",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#464a00"
+        "value": "#464a00",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#323600"
+        "value": "#323600",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#1f2100"
+        "value": "#1f2100",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Cyan": {
     "50": {
       "Background": {
-        "type": "color",
-        "value": "#def5f8"
+        "value": "#def5f8",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#bfedf1"
+        "value": "#bfedf1",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#71d6e0"
+        "value": "#71d6e0",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#62bac3"
+        "value": "#62bac3",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#539ca4"
+        "value": "#539ca4",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#448086"
+        "value": "#448086",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#356569"
+        "value": "#356569",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#294d51"
+        "value": "#294d51",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#1d383a"
+        "value": "#1d383a",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#122224"
+        "value": "#122224",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Blue": {
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#d4e9ec"
+        "value": "#d4e9ec",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#a6d1d9"
+        "value": "#a6d1d9",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#75b8c4"
+        "value": "#75b8c4",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#429eae"
+        "value": "#429eae",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#007c92"
+        "value": "#007c92",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#006678"
+        "value": "#006678",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#004e5c"
+        "value": "#004e5c",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#003943"
+        "value": "#003943",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#002329"
+        "value": "#002329",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Burgundy": {
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#e8e3e6"
+        "value": "#e8e3e6",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#d0c7ce"
+        "value": "#d0c7ce",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#b7a9b3"
+        "value": "#b7a9b3",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#a08e9b"
+        "value": "#a08e9b",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#867080"
+        "value": "#867080",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#6f5468"
+        "value": "#6f5468",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#5b3c53"
+        "value": "#5b3c53",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#4b2942"
+        "value": "#4b2942",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#2c1827"
+        "value": "#2c1827",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Yellow": {
     "50": {
       "Background": {
-        "type": "color",
-        "value": "#fbf9da"
+        "value": "#fbf9da",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#f0e973"
+        "value": "#f0e973",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#e4d700"
+        "value": "#e4d700",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#c6ae00"
+        "value": "#c6ae00",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#af9000"
+        "value": "#af9000",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#977000"
+        "value": "#977000",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#815200"
+        "value": "#815200",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#6f3a00"
+        "value": "#6f3a00",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#5c2000"
+        "value": "#5c2000",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#460200"
+        "value": "#460200",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Orange": {
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#f5e1d4"
+        "value": "#f5e1d4",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#eac1a5"
+        "value": "#eac1a5",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#dea076"
+        "value": "#dea076",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#d27c41"
+        "value": "#d27c41",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#c75b12"
+        "value": "#c75b12",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#97450e"
+        "value": "#97450e",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#73350a"
+        "value": "#73350a",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#542608"
+        "value": "#542608",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#341805"
+        "value": "#341805",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   },
   "Red": {
     "50": {
       "Background": {
-        "type": "color",
-        "value": "#f4e1e7"
+        "value": "#f4e1e7",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "100": {
       "Background": {
-        "type": "color",
-        "value": "#eed2db"
+        "value": "#eed2db",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "200": {
       "Background": {
-        "type": "color",
-        "value": "#e4b8c6"
+        "value": "#e4b8c6",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "300": {
       "Background": {
-        "type": "color",
-        "value": "#d692a7"
+        "value": "#d692a7",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "400": {
       "Background": {
-        "type": "color",
-        "value": "#c76b89"
+        "value": "#c76b89",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "500": {
       "Background": {
-        "type": "color",
-        "value": "#b74166"
+        "value": "#b74166",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Dark.Primary}",
           "Secondary": "{Foreground.Dark.Secondary}",
           "Disabled": "{Foreground.Dark.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "600": {
       "Background": {
-        "type": "color",
-        "value": "#a51140"
+        "value": "#a51140",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "700": {
       "Background": {
-        "type": "color",
-        "value": "#7d0d31"
+        "value": "#7d0d31",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "800": {
       "Background": {
-        "type": "color",
-        "value": "#5c0a24"
+        "value": "#5c0a24",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     },
     "900": {
       "Background": {
-        "type": "color",
-        "value": "#380616"
+        "value": "#380616",
+        "type": "color"
       },
       "Foreground": {
-        "type": "color",
         "value": {
           "Primary": "{Foreground.Light.Primary}",
           "Secondary": "{Foreground.Light.Secondary}",
           "Disabled": "{Foreground.Light.Disabled}"
-        }
+        },
+        "type": "color"
       }
     }
   }
