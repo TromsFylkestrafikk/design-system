@@ -1,9 +1,6 @@
 /**
  * Using Style Dictionary, design tokens from the ../tokens folder (exported from Figma Variables)
- * are parsed into the `theme.ts` file that is bundled in this package.
- *
- * Mutations of the tokens are necessary to keep the same naming and layout
- * of the `theme.ts` file as before. Suggested modifications in the future are marked with `TODO`.
+ * are parsed into variables that can be consumed by CSS and TypeScript.
  */
 import StyleDictionary from 'style-dictionary';
 import type { Config, TransformedToken } from 'style-dictionary/types';
