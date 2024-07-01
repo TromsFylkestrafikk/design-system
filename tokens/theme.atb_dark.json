@@ -1,420 +1,574 @@
 {
-  "_Text": {
-    "Primary": {
-      "WW": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.0.Background}"
+  "Foreground": {
+    "Light": {
+      "Primary": {
+        "value": "{Gray.0.Background}",
+        "type": "color"
       },
-      "BB": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.1000.Background}"
+      "Secondary": {
+        "value": "{Gray.100.Background}",
+        "type": "color"
       },
-      "WB": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.1000.Background}"
-      },
-      "BW": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.0.Background}"
+      "Disabled": {
+        "value": "{Gray.300.Background}",
+        "type": "color"
       }
     },
-    "Secondary": {
-      "WW": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.100.Background}"
+    "Dark": {
+      "Primary": {
+        "value": "{Gray.1000.Background}",
+        "type": "color"
       },
-      "BB": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.100.Background}"
+      "Secondary": {
+        "value": "{Gray.600.Background}",
+        "type": "color"
       },
-      "WB": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.100.Background}"
-      },
-      "BW": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.100.Background}"
-      }
-    },
-    "Disabled": {
-      "WW": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.300.Background}"
-      },
-      "BB": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.300.Background}"
-      },
-      "WB": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.300.Background}"
-      },
-      "BW": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.300.Background}"
+      "Disabled": {
+        "value": "{Gray.300.Background}",
+        "type": "color"
       }
     }
   },
   "Background": {
     "Neutral": {
       "0": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.1000.Background}"
+        "value": {
+          "Background": "{Gray.1000.Background}",
+          "Foreground": "{Gray.1000.Foreground}"
+        },
+        "type": "color"
       },
       "1": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.850.Background}"
+        "value": {
+          "Background": "{Gray.850.Background}",
+          "Foreground": "{Gray.850.Foreground}"
+        },
+        "type": "color"
       },
       "2": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.700.Background}"
+        "value": {
+          "Background": "{Gray.700.Background}",
+          "Foreground": "{Gray.700.Foreground}"
+        },
+        "type": "color"
       },
       "3": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.600.Background}"
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Accent": {
       "0": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.700.Background}"
+        "value": {
+          "Background": "{Gray.700.Background}",
+          "Foreground": "{Gray.700.Foreground}"
+        },
+        "type": "color"
       },
       "1": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.600.Background}"
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        },
+        "type": "color"
       },
       "2": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.100.Background}"
+        "value": {
+          "Background": "{Blue.100.Background}",
+          "Foreground": "{Blue.100.Foreground}"
+        },
+        "type": "color"
       },
       "3": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "4": {
-        "$type": "color",
-        "$value": "{color_palette.Green.100.Background}"
+        "value": {
+          "Background": "{Green.100.Background}",
+          "Foreground": "{Green.100.Foreground}"
+        },
+        "type": "color"
       },
       "5": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.800.Background}"
+        "value": {
+          "Background": "{Gray.800.Background}",
+          "Foreground": "{Gray.800.Foreground}"
+        },
+        "type": "color"
       }
-    }
-  },
-  "Foreground": {
-    "Light": {
-      "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.0.Background}"
-      },
-      "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.100.Background}"
-      },
-      "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.300.Background}"
-      }
-    },
-    "Dark": {
-      "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.1000.Background}"
-      },
-      "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.600.Background}"
-      },
-      "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.300.Background}"
-      }
-    }
-  },
-  "Zone": {
-    "From": {
-      "$type": "color",
-      "$value": "{color_palette.Green.300.Background}"
-    },
-    "To": {
-      "$type": "color",
-      "$value": "{color_palette.Cyan.200.Background}"
     }
   },
   "Status": {
     "Success": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.400.Background}"
+        "value": {
+          "Background": "{Green.400.Background}",
+          "Foreground": "{Green.400.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.700.Background}"
+        "value": {
+          "Background": "{Green.700.Background}",
+          "Foreground": "{Green.700.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Info": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.800.Background}"
+        "value": {
+          "Background": "{Blue.800.Background}",
+          "Foreground": "{Blue.800.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Warning": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Yellow.200.Background}"
+        "value": {
+          "Background": "{Yellow.200.Background}",
+          "Foreground": "{Yellow.200.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.900.Background}"
+        "value": {
+          "Background": "{Green.900.Background}",
+          "Foreground": "{Green.900.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Error": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Red.500.Background}"
+        "value": {
+          "Background": "{Red.500.Background}",
+          "Foreground": "{Red.500.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Red.900.Background}"
+        "value": {
+          "Background": "{Red.900.Background}",
+          "Foreground": "{Red.900.Foreground}"
+        },
+        "type": "color"
       }
     }
   },
   "Interactive": {
     "0": {
       "Default": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "Hover": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.600.Background}"
+        "value": {
+          "Background": "{Blue.600.Background}",
+          "Foreground": "{Blue.600.Foreground}"
+        },
+        "type": "color"
       },
       "Active": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.200.Background}"
+        "value": {
+          "Background": "{Blue.200.Background}",
+          "Foreground": "{Blue.200.Foreground}"
+        },
+        "type": "color"
       },
       "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.100.Background}"
+        "value": {
+          "Background": "{Blue.100.Background}",
+          "Foreground": "{Blue.100.Foreground}"
+        },
+        "type": "color"
       },
       "Outline": {
-        "$type": "color",
-        "$value": "{color_palette.Cyan.200.Background}"
+        "value": {
+          "Background": "{Cyan.200.Background}",
+          "Foreground": "{Cyan.200.Foreground}"
+        },
+        "type": "color"
       },
       "Destructive": {
-        "$type": "color",
-        "$value": "{color_palette.Red.300.Background}"
+        "value": {
+          "Background": "{Red.300.Background}",
+          "Foreground": "{Red.300.Foreground}"
+        },
+        "type": "color"
       }
     },
     "1": {
       "Default": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.600.Background}"
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        },
+        "type": "color"
       },
       "Hover": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.500.Background}"
+        "value": {
+          "Background": "{Gray.500.Background}",
+          "Foreground": "{Gray.500.Foreground}"
+        },
+        "type": "color"
       },
       "Active": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.900.Background}"
+        "value": {
+          "Background": "{Gray.900.Background}",
+          "Foreground": "{Gray.900.Foreground}"
+        },
+        "type": "color"
       },
       "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.200.Background}"
+        "value": {
+          "Background": "{Gray.200.Background}",
+          "Foreground": "{Gray.200.Foreground}"
+        },
+        "type": "color"
       },
       "Outline": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "Destructive": {
-        "$type": "color",
-        "$value": "{color_palette.Red.300.Background}"
+        "value": {
+          "Background": "{Red.300.Background}",
+          "Foreground": "{Red.300.Foreground}"
+        },
+        "type": "color"
       }
     },
     "2": {
       "Default": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.1000.Background}"
+        "value": {
+          "Background": "{Gray.1000.Background}",
+          "Foreground": "{Gray.1000.Foreground}"
+        },
+        "type": "color"
       },
       "Hover": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.900.Background}"
+        "value": {
+          "Background": "{Blue.900.Background}",
+          "Foreground": "{Blue.900.Foreground}"
+        },
+        "type": "color"
       },
       "Active": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.700.Background}"
+        "value": {
+          "Background": "{Blue.700.Background}",
+          "Foreground": "{Blue.700.Foreground}"
+        },
+        "type": "color"
       },
       "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.1000.Background}"
+        "value": {
+          "Background": "{Gray.1000.Background}",
+          "Foreground": "{Gray.1000.Foreground}"
+        },
+        "type": "color"
       },
       "Outline": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "Destructive": {
-        "$type": "color",
-        "$value": "{color_palette.Red.300.Background}"
+        "value": {
+          "Background": "{Red.300.Background}",
+          "Foreground": "{Red.300.Foreground}"
+        },
+        "type": "color"
       }
     },
     "3": {
       "Default": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.700.Background}"
+        "value": {
+          "Background": "{Blue.700.Background}",
+          "Foreground": "{Blue.700.Foreground}"
+        },
+        "type": "color"
       },
       "Hover": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.800.Background}"
+        "value": {
+          "Background": "{Blue.800.Background}",
+          "Foreground": "{Blue.800.Foreground}"
+        },
+        "type": "color"
       },
       "Active": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.800.Background}"
+        "value": {
+          "Background": "{Blue.800.Background}",
+          "Foreground": "{Blue.800.Foreground}"
+        },
+        "type": "color"
       },
       "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.600.Background}"
+        "value": {
+          "Background": "{Gray.600.Background}",
+          "Foreground": "{Gray.600.Foreground}"
+        },
+        "type": "color"
       },
       "Outline": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.100.Background}"
+        "value": {
+          "Background": "{Blue.100.Background}",
+          "Foreground": "{Blue.100.Foreground}"
+        },
+        "type": "color"
       },
       "Destructive": {
-        "$type": "color",
-        "$value": "{color_palette.Red.600.Background}"
+        "value": {
+          "Background": "{Red.600.Background}",
+          "Foreground": "{Red.600.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Destructive": {
       "Default": {
-        "$type": "color",
-        "$value": "{color_palette.Red.600.Background}"
+        "value": {
+          "Background": "{Red.600.Background}",
+          "Foreground": "{Red.600.Foreground}"
+        },
+        "type": "color"
       },
       "Hover": {
-        "$type": "color",
-        "$value": "{color_palette.Red.500.Background}"
+        "value": {
+          "Background": "{Red.500.Background}",
+          "Foreground": "{Red.500.Foreground}"
+        },
+        "type": "color"
       },
       "Active": {
-        "$type": "color",
-        "$value": "{color_palette.Red.900.Background}"
+        "value": {
+          "Background": "{Red.900.Background}",
+          "Foreground": "{Red.900.Foreground}"
+        },
+        "type": "color"
       },
       "Disabled": {
-        "$type": "color",
-        "$value": "{color_palette.Red.100.Background}"
+        "value": {
+          "Background": "{Red.100.Background}",
+          "Foreground": "{Red.100.Foreground}"
+        },
+        "type": "color"
       },
       "Outline": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "Destructive": {
-        "$type": "color",
-        "$value": "{color_palette.Red.300.Background}"
+        "value": {
+          "Background": "{Red.300.Background}",
+          "Foreground": "{Red.300.Foreground}"
+        },
+        "type": "color"
       }
     }
   },
   "Transport": {
     "City": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.300.Background}"
+        "value": {
+          "Background": "{Green.300.Background}",
+          "Foreground": "{Green.300.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.400.Background}"
+        "value": {
+          "Background": "{Green.400.Background}",
+          "Foreground": "{Green.400.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Region": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.500.Background}"
+        "value": {
+          "Background": "{Blue.500.Background}",
+          "Foreground": "{Blue.500.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Blue.600.Background}"
+        "value": {
+          "Background": "{Blue.600.Background}",
+          "Foreground": "{Blue.600.Foreground}"
+        },
+        "type": "color"
       }
     },
-    "Airport Express": {
+    "AirportExpress": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Red.600.Background}"
+        "value": {
+          "Background": "{Red.600.Background}",
+          "Foreground": "{Red.600.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Red.700.Background}"
+        "value": {
+          "Background": "{Red.700.Background}",
+          "Foreground": "{Red.700.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Flexible": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Orange.500.Background}"
+        "value": {
+          "Background": "{Orange.500.Background}",
+          "Foreground": "{Orange.500.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Orange.600.Background}"
+        "value": {
+          "Background": "{Orange.600.Background}",
+          "Foreground": "{Orange.600.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Boat": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Cyan.200.Background}"
+        "value": {
+          "Background": "{Cyan.200.Background}",
+          "Foreground": "{Cyan.200.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Cyan.400.Background}"
+        "value": {
+          "Background": "{Cyan.400.Background}",
+          "Foreground": "{Cyan.400.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Train": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Burgundy.800.Background}"
+        "value": {
+          "Background": "{Burgundy.800.Background}",
+          "Foreground": "{Burgundy.800.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Burgundy.900.Background}"
+        "value": {
+          "Background": "{Burgundy.900.Background}",
+          "Foreground": "{Burgundy.900.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Scooter": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.700.Background}"
+        "value": {
+          "Background": "{Green.700.Background}",
+          "Foreground": "{Green.700.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Green.800.Background}"
+        "value": {
+          "Background": "{Green.800.Background}",
+          "Foreground": "{Green.800.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Car": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Burgundy.700.Background}"
+        "value": {
+          "Background": "{Burgundy.700.Background}",
+          "Foreground": "{Burgundy.700.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Burgundy.800.Background}"
+        "value": {
+          "Background": "{Burgundy.800.Background}",
+          "Foreground": "{Burgundy.800.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Bike": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Red.700.Background}"
+        "value": {
+          "Background": "{Red.700.Background}",
+          "Foreground": "{Red.700.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Red.800.Background}"
+        "value": {
+          "Background": "{Red.800.Background}",
+          "Foreground": "{Red.800.Foreground}"
+        },
+        "type": "color"
       }
     },
     "Other": {
       "Primary": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.200.Background}"
+        "value": {
+          "Background": "{Gray.200.Background}",
+          "Foreground": "{Gray.200.Foreground}"
+        },
+        "type": "color"
       },
       "Secondary": {
-        "$type": "color",
-        "$value": "{color_palette.Gray.400.Background}"
+        "value": {
+          "Background": "{Gray.400.Background}",
+          "Foreground": "{Gray.400.Foreground}"
+        },
+        "type": "color"
       }
+    }
+  },
+  "Zone": {
+    "From": {
+      "value": {
+        "Background": "{Green.300.Background}",
+        "Foreground": "{Green.300.Foreground}"
+      },
+      "type": "color"
+    },
+    "To": {
+      "value": {
+        "Background": "{Cyan.200.Background}",
+        "Foreground": "{Cyan.200.Foreground}"
+      },
+      "type": "color"
     }
   }
 }
