@@ -11,8 +11,8 @@ import path from 'path';
 const srcDir = 'tokens';
 const outDir = 'dist';
 
-type ColorPalette = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'troms'
-const organizations: ColorPalette[] = ['atb'];
+type ColorPalette = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'svipper'
+const organizations: ColorPalette[] = ['svipper'];
 
 type Mode = 'light' | 'dark'
 const modes: Mode[] = ['light', 'dark'];
