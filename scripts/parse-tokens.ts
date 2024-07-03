@@ -35,9 +35,10 @@ StyleDictionary.registerTransform({
     // "theme" should be called "color" in variables
     if (type === 'theme') type = 'color';
 
-    //
-    const generatedPath = [toUpperFirstCase(type), ...token.path];
-    return Object.assign(originalPath, generatedPath);
+    // Append the CamelCased type to the path
+    Object.assign(originalPath, [toUpperFirstCase(type), ...token.path]);
+
+    return token;
   },
 });
 
@@ -53,20 +54,13 @@ StyleDictionary.registerFilter({
  * Contents of the main CSS file linking the themes
  */
 const cssIndex = `
+/* Import dark mode */
 @import url('dark.css') layer(theme.dark);
+/* Import light mode */
 @import url('light.css') layer(theme.light);
-
-.dark {
-  @layer theme.light, theme.dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  @layer theme.light, theme.dark;
-
-  .light:not(.override-light) {
-    @layer theme.dark, theme.light;
-  }
-}`;
+/* Override light mode if the user prefers the dark color scheme */
+@import url('dark.css') layer(theme.dark-override) (prefers-color-scheme: dark);
+`;
 
 /**
  * Contents of the main TypeScript file linking the themes
@@ -155,6 +149,9 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
   const destination = getDestination(organization);
 
   return {
+    log: {
+      verbosity: "silent"
+    },
     include: [`${srcDir}/**/*.${organization}.json`],
     source: [`${srcDir}/**/*.${organization}_${mode}.json`, `${srcDir}/**/@(border|spacing|typography)*.json`],
     platforms: {
@@ -163,12 +160,12 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
         expand: true,
         // `css` transformGroup with `attribbute/append-type` prepended
         transforms: ['attribute/append-type', 'attribute/cti', 'name/kebab', 'time/seconds', 'html/icon', 'size/rem', 'color/css', 'asset/url', 'fontFamily/css', 'cubicBezier/css', 'strokeStyle/css/shorthand', 'border/css/shorthand', 'typography/css/shorthand', 'transition/css/shorthand', 'shadow/css/shorthand'],
-        options: {
-          selector: `.${mode}`,
-        },
         files: [
           {
             format: 'css/variables',
+            options: {
+              selector: `:root[data-theme="${mode}"], :root[data-theme="auto"] { color-scheme: ${mode}; } \n:root[data-theme="${mode}"], :root[data-theme="auto"]`,
+            },
             destination: `css/${mode}.css`,
             filter: 'filter-palette',
           },
@@ -208,10 +205,12 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
 
 // Generate files for each organization-mode combination
 for (const organization of organizations) {
+  console.info(`\n👷  Built ${toUpperFirstCase(organization)} tokens      | 🌙 & 🌞 |`);
   await Promise.all(
     modes.map((mode) => {
-      console.log(`\n👷 Building ${organization} ${mode} tokens`);
       return new StyleDictionary(getStyleDictionaryConfig(organization, mode)).buildAllPlatforms();
     }),
   );
 }
+
+console.log(`\n`)
