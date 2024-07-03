@@ -37,7 +37,8 @@ StyleDictionary.registerTransform({
 
     //
     const generatedPath = [toUpperFirstCase(type), ...token.path];
-    return Object.assign(originalPath, generatedPath);
+    Object.assign(originalPath, generatedPath);
+    return token;
   },
 });
 
@@ -53,20 +54,13 @@ StyleDictionary.registerFilter({
  * Contents of the main CSS file linking the themes
  */
 const cssIndex = `
+/* Import dark mode */
 @import url('dark.css') layer(theme.dark);
+/* Import light mode */
 @import url('light.css') layer(theme.light);
-
-.dark {
-  @layer theme.light, theme.dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  @layer theme.light, theme.dark;
-
-  .light:not(.override-light) {
-    @layer theme.dark, theme.light;
-  }
-}`;
+/* Override light mode if the user prefers the dark color scheme */
+@import url('dark.css') layer(theme.dark-override) (prefers-color-scheme: dark);
+`;
 
 /**
  * Contents of the main TypeScript file linking the themes
@@ -163,12 +157,12 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
         expand: true,
         // `css` transformGroup with `attribbute/append-type` prepended
         transforms: ['attribute/append-type', 'attribute/cti', 'name/kebab', 'time/seconds', 'html/icon', 'size/rem', 'color/css', 'asset/url', 'fontFamily/css', 'cubicBezier/css', 'strokeStyle/css/shorthand', 'border/css/shorthand', 'typography/css/shorthand', 'transition/css/shorthand', 'shadow/css/shorthand'],
-        options: {
-          selector: `.${mode}`,
-        },
         files: [
           {
             format: 'css/variables',
+            options: {
+              selector: `:root[data-theme="${mode}"], :root[data-theme="auto"] { color-scheme: ${mode}; } \n:root[data-theme="${mode}"], :root[data-theme="auto"]`,
+            },
             destination: `css/${mode}.css`,
             filter: 'filter-palette',
           },
