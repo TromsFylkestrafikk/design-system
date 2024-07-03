@@ -35,9 +35,9 @@ StyleDictionary.registerTransform({
     // "theme" should be called "color" in variables
     if (type === 'theme') type = 'color';
 
-    //
-    const generatedPath = [toUpperFirstCase(type), ...token.path];
-    Object.assign(originalPath, generatedPath);
+    // Append the CamelCased type to the path
+    Object.assign(originalPath, [toUpperFirstCase(type), ...token.path]);
+
     return token;
   },
 });
@@ -149,6 +149,9 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
   const destination = getDestination(organization);
 
   return {
+    log: {
+      verbosity: "silent"
+    },
     include: [`${srcDir}/**/*.${organization}.json`],
     source: [`${srcDir}/**/*.${organization}_${mode}.json`, `${srcDir}/**/@(border|spacing|typography)*.json`],
     platforms: {
@@ -202,10 +205,12 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
 
 // Generate files for each organization-mode combination
 for (const organization of organizations) {
+  console.info(`\n👷  Built ${toUpperFirstCase(organization)} tokens      | 🌙 & 🌞 |`);
   await Promise.all(
     modes.map((mode) => {
-      console.log(`\n👷 Building ${organization} ${mode} tokens`);
       return new StyleDictionary(getStyleDictionaryConfig(organization, mode)).buildAllPlatforms();
     }),
   );
 }
+
+console.log(`\n`)
