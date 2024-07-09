@@ -1,0 +1,38 @@
+{
+  "name": "@tfk-samf/components",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/components.umd.cjs",
+  "module": "./dist/components.js",
+  "exports": {
+    ".": {
+      "import": "./dist/components.js",
+      "require": "./dist/components.umd.cjs"
+    }
+  },
+  "eslintConfig": {
+    "extends": "../../.eslintrc"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint:fix": "eslint --ext .ts,.tsx --fix ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "@tfk-samf/tokens": "^0.0.1"
+  }
+}

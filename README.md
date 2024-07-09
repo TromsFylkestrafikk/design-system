@@ -1,35 +1,11 @@
-# 🎨 Design system for Troms Fylkeskommune
+# 🎨 Design system monorepo for Troms Fylkeskommune
 
-Our design system repository will contain both raw and compiled design tokens, turning them into variables that can be used across different stacks. This package can then be included in for example a component library for each stack to provide buildings blocks to build Troms Fylkeskommune applications for these stacks.
+Our design system monorepo contains packages related to our design system. These packages together make up our entire design system workflow and are the source of truth for our designs. The packages included are listed and described below.
 
-- `/tokens`
+- `@tfk-samf/tokens`
 
-Contains raw design tokens that have been exported from Figma using the [Design Tokens (W3C) plugin](https://github.com/TromsFylkestrafikk/figma-design-tokens). 
+Contains raw design tokens that have been exported from Figma using the [Design Tokens (W3C) plugin](https://github.com/TromsFylkestrafikk/figma-design-tokens) and exports their compiled counterparts to be used throughout our design portfolio as set-in-stone design desicisions. This package follows the same standard as set by Norway's OMS (Offentlig Mobilitets Samarbeid) collaboration, such that all work on our design system can be used by other OMS partners as well.
 
-## Usage
+- `@tfk-samf/components`
 
-### CSS
-
-To use the CSS tokens, import `@tfk-samf/tokens/css` into your project. For example in the `main.ts` file of your Vue web application.
-
-```ts
-// main.ts
-
-// Import tokens
-import '@tfk-samf/tokens/css'
-
-// Import local CSS
-import './assets/main.css'
-
-// Initialize your app
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
-```
-
-The tokens become available in your application once you opt-in to the design system by adding the `data-theme` attribute to the root `<html>` tag of your page (web application). The `data-theme` attribute supports three values:
-
-1. `data-theme="auto"`      The theme follows the system default (`prefers-color-scheme` from the user-agent)
-2. `data-theme="light"`     Force a light theme, regardless of `prefers-color-scheme`
-2. `data-theme="dark"`      Force a dark theme, regardless of `prefers-color-scheme`
+Contains components implementing our design tokens (`@tfk-samf/tokens`) that are the concrete building blocks of our applications. These components are web components, such that they can be used across different web stacks. This package can be used by other OMS partners as well, since we are relying on the design token standard set by the collaboration.

@@ -8,7 +8,7 @@ import { fileHeader } from 'style-dictionary/utils';
 
 import path from 'path';
 
-const srcDir = 'tokens';
+const srcDir = 'raw';
 const outDir = 'dist';
 
 type ColorPalette = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'svipper'
@@ -150,7 +150,7 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
 
   return {
     log: {
-      verbosity: "silent"
+      verbosity: 'silent',
     },
     include: [`${srcDir}/**/*.${organization}.json`],
     source: [`${srcDir}/**/*.${organization}_${mode}.json`, `${srcDir}/**/@(border|spacing|typography)*.json`],
@@ -207,10 +207,10 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
 for (const organization of organizations) {
   console.info(`\n👷  Built ${toUpperFirstCase(organization)} tokens      | 🌙 & 🌞 |`);
   await Promise.all(
-    modes.map((mode) => {
-      return new StyleDictionary(getStyleDictionaryConfig(organization, mode)).buildAllPlatforms();
-    }),
+    modes.map((mode) => new StyleDictionary(
+      getStyleDictionaryConfig(organization, mode),
+    ).buildAllPlatforms()),
   );
 }
 
-console.log(`\n`)
+console.log('\n');

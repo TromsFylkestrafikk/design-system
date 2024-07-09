@@ -1,0 +1,19 @@
+{
+    "ignorePatterns": [
+        "dist"
+    ],
+    "extends": [
+        "airbnb-base",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+        "no-await-in-loop": "off",
+        "no-console": "off",
+        "import/no-unresolved": "off",
+        "no-restricted-syntax": "off",
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    }
+}
