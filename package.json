@@ -2,7 +2,8 @@
   "name": "@tfk-samf/design-system",
   "workspaces": [
     "packages/components",
-    "packages/tokens"
+    "packages/tokens",
+    "packages/figma-to-dtcg"
   ],
   "scripts": {},
   "devDependencies": {
