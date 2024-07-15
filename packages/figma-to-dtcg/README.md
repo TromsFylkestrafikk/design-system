@@ -49,7 +49,7 @@ const response = await fetch("https://api.figma.com/v1/files/:file_key/variables
 })
 
 const { tokens } = await useFigmaToDTCG({
-    name: "rest",
+    api: "rest",
     response
 });
 ```
