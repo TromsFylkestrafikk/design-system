@@ -53,8 +53,7 @@ StyleDictionary.registerFilter({
 /**
  * Contents of the main CSS file linking the themes
  */
-const cssIndex = `
-/* Import dark mode */
+const cssIndex = `/* Import dark mode */
 @import url('dark.css') layer(theme.dark);
 /* Import light mode */
 @import url('light.css') layer(theme.light);
@@ -65,9 +64,8 @@ const cssIndex = `
 /**
  * Contents of the main TypeScript file linking the themes
  */
-const tsIndex = `
-import Light from "./light.ts"
-import Dark from "./dark.ts"
+const tsIndex = `import Light from "./light"
+import Dark from "./dark"
 
 export const themes = {
   Light,
@@ -107,14 +105,17 @@ StyleDictionary.registerFormat({
  * @returns Nested object based on the path of each token
  */
 const expandToNestedObject = (tokens: TransformedToken[]) => {
-  const result = {};
+  interface NestedObj {
+    [key: string]: string | NestedObj
+  }
+  const result: NestedObj = {};
   tokens.forEach((token) => {
     let current = result;
     token.path.forEach((element, index) => {
       if (index === token.path.length - 1) current[element] = token.value;
       else {
         current[element] = current[element] || {};
-        current = current[element];
+        current = current[element] as NestedObj;
       }
     });
   });

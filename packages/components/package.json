@@ -11,14 +11,15 @@
     ".": {
       "import": "./dist/components.js",
       "require": "./dist/components.umd.cjs"
-    }
+    },
+    "./vuetify": "./dist/vuetify/svipper-theme.ts"
   },
   "eslintConfig": {
     "extends": "../../.eslintrc"
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && copyfiles -u 1 ./src/vuetify/svipper-theme.ts dist",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.tsx .",
     "lint:fix": "eslint --ext .ts,.tsx --fix ."
@@ -27,12 +28,14 @@
     "@types/node": "^20.14.10",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   },
-  "dependencies": {
-    "@tfk-samf/tokens": "^0.0.1"
+  "peerDependencies": {
+    "@tfk-samf/tokens": "^0.0.1",
+    "vuetify": "^3.6.11"
   }
 }

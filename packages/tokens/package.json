@@ -8,7 +8,7 @@
   ],
   "exports": {
     "./css": "./dist/svipper/css/index.css",
-    "./ts": "./dist/svipper/ts"
+    "./ts": "./dist/svipper/ts/index.ts"
   },
   "scripts": {
     "build": "tsx scripts/parse-tokens.ts",
