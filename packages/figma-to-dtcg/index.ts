@@ -203,24 +203,23 @@ async function collectionAsJSON(
 }
 
 type RestAPIProps = {
+    api?: 'rest'
     response: GetLocalVariablesResponse
 }
 
 // This is a placeholder type
 type PluginAPIProps = {
-  name: string
+  api?: 'plugin'
 }
 
-async function useFigmaToDTCG(props?: RestAPIProps | PluginAPIProps) {
-  const isRestApiEnv = (p: typeof props): p is RestAPIProps => !!p && 'response' in p;
+async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps = { api: 'plugin' }) {
+  const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
 
   getVariableById = isRestApiEnv(props)
     ? (id: string) => Promise.resolve(props.response.meta.variables[id])
-  // @ts-expect-error Figma types are globally imported and not recognized when bundling
     : (id: string) => figma.variables.getVariableByIdAsync(id) as Promise<LocalVariable>;
   const collections = isRestApiEnv(props)
     ? Object.values(props.response.meta.variableCollections)
-  // @ts-expect-error Figma types are globally imported and not recognized when bundling
     : await figma.variables.getLocalVariableCollectionsAsync();
 
   const tree: Tree = {};
