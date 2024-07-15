@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script>
+        onmessage = (event) => {
+            const { type, contents, raw } = event.data.pluginMessage;
+            
+            if (type === 'download-zip') {
+                var zip = new JSZip();
+
+                Object.entries(contents).forEach(([ fname, content ]) => {
+                    zip.file(fname, content)
+                })
+
+                zip.generateAsync({ type: "blob" }).then((b) => {
+                    const url = URL.createObjectURL(b);
+        
+                    document.getElementById("raw").innerHTML = raw
+        
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `tokens.zip`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                })
+            }
+        };
+
+        parent.postMessage({ pluginMessage: { type: 'ready' } }, '*');
+    </script>
+</head>
+<body>
+    <pre>Exporting Figma variables...</pre>
+    <details>
+        <summary>
+            View raw
+        </summary>
+        <pre id="raw"></pre>
+    </details>
+</body>
+</html>
+
