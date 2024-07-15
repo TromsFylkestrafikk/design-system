@@ -3,6 +3,8 @@ import {
   LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
 } from '@figma/rest-api-spec';
 
+const _figma = figma || undefined;
+
 let getVariableById: (id: string) => Promise<LocalVariable>;
 
 const KEY_PREFIX_COLLECTION = '';
@@ -13,7 +15,8 @@ export type RestAPIProps = {
 }
 
 export type PluginAPIProps = {
-api?: 'plugin'
+  api?: 'plugin',
+  client: PluginAPI
 }
 
 type OptionalExcept<T, K extends keyof T> = Pick<T, K> & Partial<T>
@@ -205,15 +208,15 @@ async function collectionAsJSON(
   return collection;
 }
 
-async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps = { api: 'plugin' }) {
+async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
   const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
 
   getVariableById = isRestApiEnv(props)
     ? (id: string) => Promise.resolve(props.response.meta.variables[id])
-    : (id: string) => figma.variables.getVariableByIdAsync(id) as Promise<LocalVariable>;
+    : (id: string) => _figma.variables.getVariableByIdAsync(id) as Promise<LocalVariable>;
   const collections = isRestApiEnv(props)
     ? Object.values(props.response.meta.variableCollections)
-    : await figma.variables.getLocalVariableCollectionsAsync();
+    : await _figma.variables.getLocalVariableCollectionsAsync();
 
   const tree: Tree = {};
   const { idToKey } = uniqueKeyIdMaps(collections, 'id', KEY_PREFIX_COLLECTION);

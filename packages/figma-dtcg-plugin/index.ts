@@ -54,5 +54,9 @@ function exportFiles(tokens: Tree) {
   });
 }
 
-const { tokens } = await useFigmaToDTCG();
+const { tokens } = await useFigmaToDTCG({
+  api: 'plugin',
+  client: figma,
+});
+
 exportFiles(tokens);

@@ -25,11 +25,15 @@ Import the package into your script and provide the necessary options.
 
 ### Inside a Figma Plugin
 
+Configure your [Figma plugin with typings](https://www.figma.com/plugin-docs/api/typings/) and pass the Figma client to the composable.
+
 ```ts
 import { useFigmaToDTCG } from '@tfk-samf/figma-to-dtcg';
 
-// Plugin API is the default
-const { tokens } = await useFigmaToDTCG();
+const { tokens } = await useFigmaToDTCG({
+    api: "plugin",
+    client: figma
+});
 ```
 
 ### Using the Figma Variables Rest API
@@ -45,7 +49,7 @@ const response = await fetch("https://api.figma.com/v1/files/:file_key/variables
 })
 
 const { tokens } = await useFigmaToDTCG({
-    // Understands that we are using the RestAPI when we provide a response
+    name: "rest",
     response
 });
 ```
