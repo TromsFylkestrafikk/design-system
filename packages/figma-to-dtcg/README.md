@@ -49,6 +49,3 @@ const { tokens } = await useFigmaToDTCG({
     response
 });
 ```
-
-
-
