@@ -1,5 +1,5 @@
 {
-  "name": "design-tokens-w3c-export",
+  "name": "@tfk-samf/figma-dtcg-plugin",
   "version": "0.1.1",
   "description": "Exports Figma variables into separate JSON files per collection and modes grouped in a .zip file for easy download.",
   "main": "dist/index.js",

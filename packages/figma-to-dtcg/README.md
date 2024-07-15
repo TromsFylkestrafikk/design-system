@@ -2,9 +2,7 @@
 
 This is a composable package that exports Figma variables in the Design Tokens (W3C) spec, regardless of Figma environment it is running in.  
 
-## Usage
-
-### Props
+## Props
 
 - `props`: `RestAPIProps` | `PluginAPIProps`
 
@@ -23,16 +21,18 @@ type RestAPIProps = {
 
 Import the package into your script and provide the necessary options.
 
-### Plugin
+## Usage
+
+### Inside a Figma Plugin
 
 ```ts
 import { useFigmaToDTCG } from '@tfk-samf/figma-to-dtcg';
 
-// Plugin API ios the default
+// Plugin API is the default
 const { tokens } = await useFigmaToDTCG();
 ```
 
-### Rest API
+### Using the Figma Variables Rest API
 
 ```ts
 import { useFigmaToDTCG } from "@tfk-samf/figma-to-dtcg"
@@ -45,7 +45,7 @@ const response = await fetch("https://api.figma.com/v1/files/:file_key/variables
 })
 
 const { tokens } = await useFigmaToDTCG({
-    // composable understands that we are using the RestAPI when we provide a response
+    // Understands that we are using the RestAPI when we provide a response
     response
 });
 ```
