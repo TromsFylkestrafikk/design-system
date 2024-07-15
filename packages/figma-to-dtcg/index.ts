@@ -1,9 +1,3 @@
-/**
- *
- * Main export code based on code by `jake-figma`
- * https://github.com/jake-figma/figma-token-json
- *
- */
 import {
   RGB, RGBA,
   LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
