@@ -3,7 +3,6 @@ import {
   LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
 } from '@figma/rest-api-spec';
 
-const _figma = figma || undefined;
 
 let getVariableById: (id: string) => Promise<LocalVariable>;
 
@@ -213,10 +212,10 @@ async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
 
   getVariableById = isRestApiEnv(props)
     ? (id: string) => Promise.resolve(props.response.meta.variables[id])
-    : (id: string) => _figma.variables.getVariableByIdAsync(id) as Promise<LocalVariable>;
+    : (id: string) => props.client.variables.getVariableByIdAsync(id) as Promise<LocalVariable>;
   const collections = isRestApiEnv(props)
     ? Object.values(props.response.meta.variableCollections)
-    : await _figma.variables.getLocalVariableCollectionsAsync();
+    : await props.client.variables.getLocalVariableCollectionsAsync();
 
   const tree: Tree = {};
   const { idToKey } = uniqueKeyIdMaps(collections, 'id', KEY_PREFIX_COLLECTION);
