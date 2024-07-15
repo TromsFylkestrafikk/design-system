@@ -13,17 +13,26 @@ let getVariableById: (id: string) => Promise<LocalVariable>;
 
 const KEY_PREFIX_COLLECTION = '';
 
+export type RestAPIProps = {
+  api?: 'rest'
+  response: GetLocalVariablesResponse
+}
+
+export type PluginAPIProps = {
+api?: 'plugin'
+}
+
 type OptionalExcept<T, K extends keyof T> = Pick<T, K> & Partial<T>
-type DesignTokenType = 'color' | 'number'
-type DesignToken = {
+export type DesignTokenType = 'color' | 'number'
+export type DesignToken = {
   type: DesignTokenType
   value: string | number | boolean | RGB | CompositeToken
   }
-interface CompositeToken { [key: string]: DesignToken['value'] }
-type Token = DesignToken | CompositeToken
+export interface CompositeToken { [key: string]: DesignToken['value'] }
+export type Token = DesignToken | CompositeToken
 
-type Tree = Token | { [key: string]: Tree };
-type Node = Exclude<Tree, Token>
+export type Tree = Token | { [key: string]: Tree };
+export type Node = Exclude<Tree, Token>
 
 /**
  * Converts an RGB(a) value to HEX
@@ -200,16 +209,6 @@ async function collectionAsJSON(
     }
   }
   return collection;
-}
-
-type RestAPIProps = {
-    api?: 'rest'
-    response: GetLocalVariablesResponse
-}
-
-// This is a placeholder type
-type PluginAPIProps = {
-  api?: 'plugin'
 }
 
 async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps = { api: 'plugin' }) {

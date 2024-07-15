@@ -3,7 +3,8 @@
   "workspaces": [
     "packages/components",
     "packages/tokens",
-    "packages/figma-to-dtcg"
+    "packages/figma-to-dtcg",
+    "packages/figma-dtcg-plugin"
   ],
   "scripts": {},
   "devDependencies": {
