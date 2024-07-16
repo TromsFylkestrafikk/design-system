@@ -1,6 +1,6 @@
 import {
   RGB, RGBA,
-  LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
+  LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse
 } from '@figma/rest-api-spec';
 
 
@@ -207,6 +207,31 @@ async function collectionAsJSON(
   return collection;
 }
 
+export type TokenType = "border" | "spacing" | "typography" | "color_palette" | "theme" 
+export type Organization = "atb" | "troms"
+export type Mode = "light" | "dark"
+export type Tokens = {
+  [key in TokenType]: {
+    [key in Organization]: {
+      [key in Mode]: Tree
+    }
+  }
+}
+/**
+ * 
+ * @param props 
+ * @returns `{ tokens }` Design Tokens in W3C spec
+ * ```json
+ * 
+ * {
+ *    [key: TokenType]: {
+ *      [key: Organization]: {
+ *        [key: Mode]: Tree
+ *      }
+ *    }
+ * }
+ * ```
+ */
 async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
   const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
 
@@ -228,9 +253,10 @@ async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
 
     tree[name] = await collectionAsJSON(collection);
   }
+  console.log("tokens", JSON.stringify(tree, null, 2))
 
   return {
-    tokens: tree,
+    tokens: tree as Tokens,
   };
 }
 
