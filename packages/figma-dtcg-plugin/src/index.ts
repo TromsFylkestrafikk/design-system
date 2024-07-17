@@ -5,7 +5,7 @@
  *
  */
 import { useFigmaToDTCG } from '@tfk-samf/figma-to-dtcg';
-import type { Mode, Tokens, TokenType } from '@tfk-samf/figma-to-dtcg';
+import type { TokenType } from '@tfk-samf/figma-to-dtcg';
 
 console.clear();
 console.log('------------------- Console cleared by Design Tokens (W3C) Export -------------------');
@@ -29,7 +29,6 @@ figma.showUI(__html__);
  *
  */
 async function exportFiles() {
-  
   const { tokens } = await useFigmaToDTCG({
     api: 'plugin',
     client: figma,
@@ -40,16 +39,9 @@ async function exportFiles() {
   const zipContent: Record<FileName, string> = {};
 
   collections.forEach((collection) => {
-    const modes = Object.keys(tokens[collection]) as Mode[];
-
-    const isSingleMode = modes.length === 1;
-
-    modes.forEach((mode) => {
-      const fileName = `${collection}${isSingleMode ? '' : `.${mode}`}.json`;
-      // @ts-ignore
-      const content = JSON.stringify(tokens[collection][mode], null, 2);
-      zipContent[fileName] = content;
-    });
+    const fileName = `${collection}.json`;
+    const content = JSON.stringify(tokens[collection], null, 2);
+    zipContent[fileName] = content;
   });
 
   figma.ui.postMessage({

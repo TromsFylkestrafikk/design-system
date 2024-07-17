@@ -50,3 +50,9 @@ _Coming soon..._
 
 ## Usage with REST API
 _Coming soon..._
+
+## Troubleshooting
+
+### TypeError: name.charAt is not a function
+
+Check if you have a mode for your variables that is called "Value" or "Type". Style Dictionary will parse all Figma Variables as a value or type respectively, leading to inconsistent behaviour. This can be fixed by renaming these modes to another name to avoid the name collision, such as "Scale".
