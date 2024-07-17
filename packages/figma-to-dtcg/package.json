@@ -31,5 +31,6 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "typescript": "^5.3.2"
-  }
+  },
+  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4"
 }
