@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/figma-to-dtcg",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "The basis of the design system for the mobility department of Troms country.",
   "files": [
     "dist"

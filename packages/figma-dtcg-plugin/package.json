@@ -1,6 +1,7 @@
 {
   "name": "@tfk-samf/figma-dtcg-plugin",
-  "version": "0.1.1",
+  "version": "0.2.0",
+  "private": "true",
   "description": "Exports Figma variables into separate JSON files per collection and modes grouped in a .zip file for easy download.",
   "main": "dist/index.js",
   "type": "module",
@@ -15,7 +16,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@tfk-samf/figma-to-dtcg": "0.0.1"
+    "@tfk-samf/figma-to-dtcg": "0.2.0"
   },
   "devDependencies": {
     "@figma/eslint-plugin-figma-plugins": "*",
