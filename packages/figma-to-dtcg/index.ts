@@ -3,16 +3,33 @@ import {
   LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
 } from '@figma/rest-api-spec';
 
-
-let getVariableById: (id: string) => Promise<LocalVariable>;
-
-const KEY_PREFIX_COLLECTION = '';
-
+/**
+ * Configure this package for the Figma Variables Rest API.
+ *
+ * @example
+ * {
+ *    // The API used
+ *    api
+ *    // Response from Figma Variables Rest API /v1/files/:file_key/variables/* endpoint
+ *    response
+ * }
+ */
 export type RestAPIProps = {
   api?: 'rest'
   response: GetLocalVariablesResponse
 }
 
+/**
+ * Configure this package for the Figma Plugin API.
+ *
+ * @example
+ * {
+ *    // The API used
+ *    api
+ *    // Pass in Figma Plugin API client
+ *    client: figma
+ * }
+ */
 export type PluginAPIProps = {
   api?: 'plugin',
   client: PluginAPI
@@ -23,12 +40,26 @@ export type DesignTokenType = 'color' | 'number'
 export type DesignToken = {
   type: DesignTokenType
   value: string | number | boolean | RGB | CompositeToken
-  }
+  prefix: string
+}
 export interface CompositeToken { [key: string]: DesignToken['value'] }
 export type Token = DesignToken | CompositeToken
 
 export type Tree = Token | { [key: string]: Tree };
 export type Node = Exclude<Tree, Token>
+
+export type GenericCollection = 'border' | 'spacing' | 'typography'
+export type OrganisationCollection = 'color_palette' | 'theme'
+export type TokenType = GenericCollection & OrganisationCollection
+export type Organization = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'svipper'
+export type Mode = 'light' | 'dark'
+export type Theme = `${Organization}_${Mode}` | Organization
+export type Tokens = {
+  [orgCol in OrganisationCollection]?: { [theme in Theme]?: Tree } } & {
+  [genCol in GenericCollection]?: Tree
+}
+
+let getVariableById: (id: string) => Promise<LocalVariable>;
 
 /**
  * Converts an RGB(a) value to HEX
@@ -81,18 +112,17 @@ function isPrivate(collection: string) {
  *
  * @param nodesWithNames Collection of variables
  * @param idKey The key of the id in the `nodesWithNames` parameter
- * @param prefix If names should be prefixed
  * @returns Functions that map from id to name and back
  */
-function uniqueKeyIdMaps<T extends OptionalExcept<LocalVariableCollection, 'name'>, K extends keyof T, F extends T[K] &(string | number | symbol)>(nodesWithNames: T[], idKey: K, prefix = '') {
+function uniqueKeyIdMaps<T extends OptionalExcept<LocalVariableCollection, 'name'>, K extends keyof T, F extends T[K] &(string | number | symbol)>(nodesWithNames: T[], idKey: K) {
   const idToKey: Record<F, string> = {} as Record<F, string>;
   const keyToId: Record<string, T[K]> = {};
   nodesWithNames.forEach((node) => {
     const key = sanitizeName(node.name);
     let int = 2;
-    let uniqueKey = `${prefix}${key}`;
+    let uniqueKey = key;
     while (keyToId[uniqueKey]) {
-      uniqueKey = `${prefix}${key}_${int}`;
+      uniqueKey = `${key}_${int}`;
       int += 1;
     }
     keyToId[uniqueKey] = node[idKey];
@@ -162,21 +192,39 @@ async function valueToJSON(
 }
 
 /**
- * Converts collection to Design Token (W3C) standard
+ * Creates the prefix for a specific collection. Design tokens will be prefixed with this.
+ *
+ * @param collection Name of the current collection
+ * @returns Sanitized name of the collection to be prefixed on the variable name
+ */
+function makePrefix(
+  collection: string,
+) {
+  const prefix = sanitizeName(collection);
+  return prefix === 'theme' ? 'color' : prefix;
+}
+
+/**
+ * Converts a collection to Design Token (W3C) standard
  *
  * @param collection The variable collection to export
  * @returns The collection in the Design Token (W3C) format
  */
 async function collectionAsJSON(
-  { modes, variableIds }: LocalVariableCollection,
+  { name: collectionName, modes, variableIds }: LocalVariableCollection,
 ) {
   const collection: Record<string, Tree> = {};
   const { idToKey, keyToId } = uniqueKeyIdMaps(modes, 'modeId');
   const modeKeys = Object.values(idToKey);
+  const isMultiMode = modeKeys.length > 1;
+  const collectionPrefix = makePrefix(collectionName);
 
-  modeKeys.forEach((mode: string) => {
-    collection[mode] = collection[mode] || {};
-  });
+  // Add nesting for each mode if we have multiple
+  if (isMultiMode) {
+    modeKeys.forEach((mode: string) => {
+      collection[mode] = collection[mode] || {};
+    });
+  }
 
   variables: for (const variableId of variableIds) {
     const {
@@ -186,7 +234,8 @@ async function collectionAsJSON(
     } = (await getVariableById(variableId))!;
 
     for (const mode of modeKeys) {
-      let obj = collection[mode];
+      // Do not nest if there is only one mode
+      let obj = isMultiMode ? collection[mode] : collection;
       const value = valuesByMode[keyToId[mode]];
 
       if (value !== undefined && ['COLOR', 'FLOAT'].includes(resolvedType)) {
@@ -201,12 +250,20 @@ async function collectionAsJSON(
 
         obj.value = await valueToJSON(name, value, resolvedType);
         obj.type = (resolvedType === 'COLOR' ? 'color' : 'number') as DesignTokenType;
+        obj.prefix = collectionPrefix;
       }
     }
   }
   return collection;
 }
 
+/**
+ * Provides Design Tokens from a given Figma instance
+ * using either Figma Variables Rest API or the Plugin API.
+ *
+ * @param props
+ * @returns `{ tokens }` Design Tokens in W3C spec
+ */
 async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
   const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
 
@@ -218,7 +275,7 @@ async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
     : await props.client.variables.getLocalVariableCollectionsAsync();
 
   const tree: Tree = {};
-  const { idToKey } = uniqueKeyIdMaps(collections, 'id', KEY_PREFIX_COLLECTION);
+  const { idToKey } = uniqueKeyIdMaps(collections, 'id');
 
   for (const collection of collections) {
     const name = idToKey[collection.id];
@@ -230,7 +287,7 @@ async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
   }
 
   return {
-    tokens: tree,
+    tokens: tree as Tokens,
   };
 }
 

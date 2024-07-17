@@ -3,21 +3,32 @@
  * are parsed into variables that can be consumed by CSS and TypeScript.
  */
 import StyleDictionary from 'style-dictionary';
-import type { Config, TransformedToken } from 'style-dictionary/types';
+import type { Config, DesignTokens, TransformedToken } from 'style-dictionary/types';
 import { fileHeader } from 'style-dictionary/utils';
+import type { Organization, Mode, Tokens } from '@tfk-samf/figma-to-dtcg';
 
 import path from 'path';
+import border from '../raw/border.json';
+import colorPalette from '../raw/color_palette.json';
+import spacing from '../raw/spacing.json';
+import theme from '../raw/theme.json';
+import typography from '../raw/typography.json';
 
 const srcDir = 'raw';
 const outDir = 'dist';
 
-type ColorPalette = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'svipper'
-const organizations: ColorPalette[] = ['svipper'];
-
-type Mode = 'light' | 'dark'
+const organizations: Organization[] = ['svipper'];
 const modes: Mode[] = ['light', 'dark'];
 
 const toUpperFirstCase = (name: string) => name.charAt(0).toUpperCase() + name.slice(1);
+
+const makeTokens = (organization: Organization, mode: Mode) => ({
+  ...(theme as Tokens['theme'])?.[`${organization}_${mode}`],
+  ...(colorPalette as Tokens['color_palette'])?.[organization],
+  ...border,
+  ...typography,
+  ...spacing,
+} as DesignTokens);
 
 /**
  * Appends the name of the collection to the file path, such that
@@ -28,15 +39,11 @@ StyleDictionary.registerTransform({
   type: 'attribute',
   transform: (token: TransformedToken) => {
     const originalPath = token.path;
-    // Extract the collection name from the filename
-    let type = token.filePath.match(/([^/]+?)(?=\.)/)?.[0];
 
-    if (!type) return token;
-    // "theme" should be called "color" in variables
-    if (type === 'theme') type = 'color';
+    if (!token.prefix) return token;
 
     // Append the CamelCased type to the path
-    Object.assign(originalPath, [toUpperFirstCase(type), ...token.path]);
+    Object.assign(originalPath, [toUpperFirstCase(token.prefix), ...token.path]);
 
     return token;
   },
@@ -47,7 +54,7 @@ StyleDictionary.registerTransform({
  */
 StyleDictionary.registerFilter({
   name: 'filter-palette',
-  filter: (token: TransformedToken) => token.isSource,
+  filter: (token: TransformedToken) => token.prefix !== 'color_palette',
 });
 
 /**
@@ -139,14 +146,14 @@ StyleDictionary.registerFormat({
  * @param organization Name of the organization
  * @returns Output folder
  */
-const getDestination = (organization: ColorPalette): string => path.join(outDir, `${organization}/`);
+const getDestination = (organization: Organization): string => path.join(outDir, `${organization}/`);
 
 /**
  * @param organization Name of the organization
  * @param mode Theme mode
  * @returns Style Dictionary config for the org-mode combination
  */
-const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Config => {
+const getStyleDictionaryConfig = (organization: Organization, mode: Mode): Config => {
   const destination = getDestination(organization);
 
   return {
@@ -155,6 +162,7 @@ const getStyleDictionaryConfig = (organization: ColorPalette, mode: Mode): Confi
     },
     include: [`${srcDir}/**/*.${organization}.json`],
     source: [`${srcDir}/**/*.${organization}_${mode}.json`, `${srcDir}/**/@(border|spacing|typography)*.json`],
+    tokens: makeTokens(organization, mode),
     platforms: {
       css: {
         buildPath: destination,

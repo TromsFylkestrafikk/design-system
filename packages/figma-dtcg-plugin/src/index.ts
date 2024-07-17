@@ -5,7 +5,7 @@
  *
  */
 import { useFigmaToDTCG } from '@tfk-samf/figma-to-dtcg';
-import type { Tree, Node } from '@tfk-samf/figma-to-dtcg';
+import type { TokenType } from '@tfk-samf/figma-to-dtcg';
 
 console.clear();
 console.log('------------------- Console cleared by Design Tokens (W3C) Export -------------------');
@@ -27,24 +27,21 @@ figma.showUI(__html__);
  * }
  * ```
  *
- * @param tree A design token tree
  */
-function exportFiles(tokens: Tree) {
-  const collections = Object.keys(tokens);
+async function exportFiles() {
+  const { tokens } = await useFigmaToDTCG({
+    api: 'plugin',
+    client: figma,
+  });
+  const collections = Object.keys(tokens) as TokenType[];
 
   type FileName = string
   const zipContent: Record<FileName, string> = {};
 
   collections.forEach((collection) => {
-    const modes = Object.keys((tokens as Node)[collection]);
-
-    const isSingleMode = modes.length === 1;
-
-    modes.forEach((mode) => {
-      const fileName = `${collection}${isSingleMode ? '' : `.${mode}`}.json`;
-      const content = JSON.stringify(((tokens as Node)[collection] as Node)[mode], null, 2);
-      zipContent[fileName] = content;
-    });
+    const fileName = `${collection}.json`;
+    const content = JSON.stringify(tokens[collection], null, 2);
+    zipContent[fileName] = content;
   });
 
   figma.ui.postMessage({
@@ -54,9 +51,4 @@ function exportFiles(tokens: Tree) {
   });
 }
 
-const { tokens } = await useFigmaToDTCG({
-  api: 'plugin',
-  client: figma,
-});
-
-exportFiles(tokens);
+exportFiles();
