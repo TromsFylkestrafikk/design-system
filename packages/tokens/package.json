@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/tokens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The basis of the design system for the mobility department of Troms country.",
   "type": "module",
   "files": [
@@ -19,6 +19,7 @@
     "extends": "../../.eslintrc"
   },
   "devDependencies": {
+    "@tfk-samf/figma-to-dtcg": "0.0.1",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "eslint": "^8.54.0",

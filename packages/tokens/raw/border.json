@@ -2,25 +2,30 @@
   "Radius": {
     "Small": {
       "value": 4,
-      "type": "number"
+      "type": "number",
+      "prefix": "border"
     },
     "Medium": {
       "value": 8,
-      "type": "number"
+      "type": "number",
+      "prefix": "border"
     },
     "Circle": {
       "value": 20,
-      "type": "number"
+      "type": "number",
+      "prefix": "border"
     }
   },
   "Width": {
     "Slim": {
       "value": 1,
-      "type": "number"
+      "type": "number",
+      "prefix": "border"
     },
     "Medium": {
       "value": 2,
-      "type": "number"
+      "type": "number",
+      "prefix": "border"
     }
   }
 }
