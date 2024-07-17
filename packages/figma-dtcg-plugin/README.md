@@ -3,7 +3,7 @@
 This plugin exports Figma variables into separate JSON files per collection and modes grouped in a .zip file for easy download. 
 
 ## Background
-This plugin has been created for managing the design system of the public mobility collaboration (Offentlig Mobilitetssamarbeid [OMS]) in Norway. This project creates whitelabel software for the public transport sector, which can then be shared across the entire country. This means that multiple organisations are creating multiple themes using this design system. To manage the complexity, Figma variables are considered the source of truth for design decisions.
+This plugin has been created for exporting a whitelabel design system that is shared across organisations, where each organisation has a `light` and `dark` theme too. To manage the complexity, Figma variables are considered the source of truth for design decisions.
 
 ## Flow
 The design system is structured in multiple layers.
@@ -45,11 +45,11 @@ The border collection defines characteristics of the borders used throughout app
 ### Divide and conquer
 Collections are not limited to the ones described here. Any set of variables where a certain scale should be enforced is a candidate for the `Base layer`. Splitting the semantic layer up in ccollections can be particularly useful when we want to share variables across themes or organizations. They do not need to be redefined for each theme per organization, as per our `Border` collection.
 
-## Style Dictionary scripts
-_Coming soon..._
-
 ## Usage with REST API
-_Coming soon..._
+We exposed the [underlying package for parsing tokens](https://www.npmjs.com/package/@tfk-samf/figma-to-dtcg), such that it can be used using the Figma REST API. More information can be found in the [GitHub repository](https://github.com/TromsFylkestrafikk/design-system/tree/main/packages/figma-to-dtcg).
+
+## Using design tokens
+The tokens that are exported can be consumed by your favorite tool to connect design and code using design tokens. We provide an implementation [example for Style Dictionary](https://github.com/TromsFylkestrafikk/design-system/blob/main/packages/tokens/scripts/parse-tokens.ts). Style Dictionary gives you the flexibility to adjust the design tokens to fit your organisation.
 
 ## Troubleshooting
 

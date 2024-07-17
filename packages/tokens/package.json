@@ -1,7 +1,7 @@
 {
   "name": "@tfk-samf/tokens",
   "version": "0.2.0",
-  "description": "The basis of the design system for the mobility department of Troms country.",
+  "description": "Design tokens are the source of truth for design decisions in Troms county.",
   "type": "module",
   "files": [
     "dist"

@@ -1,6 +1,7 @@
 {
   "name": "@tfk-samf/components",
   "version": "0.2.0",
+  "description": "Web components used for applications in Troms County.",
   "type": "module",
   "files": [
     "dist"
