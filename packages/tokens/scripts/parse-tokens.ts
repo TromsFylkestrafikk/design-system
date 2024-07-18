@@ -50,14 +50,6 @@ StyleDictionary.registerTransform({
 });
 
 /**
- * Removes the base colors (color palette) from the final output.
- */
-StyleDictionary.registerFilter({
-  name: 'filter-palette',
-  filter: (token: TransformedToken) => token.prefix !== 'color_palette',
-});
-
-/**
  * Contents of the main CSS file linking the themes
  */
 const cssIndex = `/* Import dark mode */
@@ -176,7 +168,6 @@ const getStyleDictionaryConfig = (organization: Organization, mode: Mode): Confi
               selector: `:root[data-theme="${mode}"], :root[data-theme="auto"] { color-scheme: ${mode}; } \n:root[data-theme="${mode}"], :root[data-theme="auto"]`,
             },
             destination: `css/${mode}.css`,
-            filter: 'filter-palette',
           },
           {
             format: 'index',
@@ -196,7 +187,6 @@ const getStyleDictionaryConfig = (organization: Organization, mode: Mode): Confi
           {
             format: 'typescript/obj',
             destination: `ts/${mode}.ts`,
-            filter: 'filter-palette',
           },
           {
             format: 'index',

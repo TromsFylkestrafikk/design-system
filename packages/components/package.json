@@ -13,6 +13,7 @@
       "import": "./dist/components.js",
       "require": "./dist/components.umd.cjs"
     },
+    "./style": "./dist/style.css",
     "./vuetify": "./dist/vuetify/svipper-theme.ts"
   },
   "eslintConfig": {
@@ -39,5 +40,9 @@
     "@tfk-samf/tokens": "0.2.0",
     "vuetify": "^3.6.11"
   },
-  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4"
+  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4",
+  "dependencies": {
+    "@shoelace-style/localize": "^3.2.1",
+    "@shoelace-style/shoelace": "^2.15.1"
+  }
 }

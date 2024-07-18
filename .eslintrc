@@ -26,7 +26,13 @@
             "varsIgnorePattern": "^_",
             "caughtErrorsIgnorePattern": "^_"
           }
-        ]
-
+        ],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "": "never"
+          }
+       ]
     }
 }
