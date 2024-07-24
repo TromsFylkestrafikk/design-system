@@ -43,8 +43,8 @@
     "vite-plugin-dts": "^4.0.0-beta.0"
   },
   "dependencies": {
-    "@shoelace-style/localize": "^3.2.1",
-    "@shoelace-style/shoelace": "^2.15.1",
+    "@fluentui/tokens": "^1.0.0-alpha.16",
+    "@fluentui/web-components": "3.0.0-beta.47",
     "@tfk-samf/tokens": "0.2.0"
   },
   "optionalDependencies": {

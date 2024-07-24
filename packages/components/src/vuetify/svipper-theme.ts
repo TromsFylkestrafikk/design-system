@@ -19,14 +19,14 @@ const getTextColor = (hex: string): 'black' | 'white' => {
 
 // Mapping from Vuetify variable to design token
 const VuetifyMap = (mode: Mode): Record<string, string> => ({
-  background: themes[mode].Color.Background.Neutral[0],
-  surface: themes[mode].Color.Background.Accent[0],
-  primary: themes[mode].Color.Background.Accent[0],
-  secondary: themes[mode].Color.Background.Accent[0],
-  info: themes[mode].Color.Status.Info.Primary,
-  error: themes[mode].Color.Status.Error.Primary,
-  success: themes[mode].Color.Status.Success.Primary,
-  warning: themes[mode].Color.Status.Warning.Primary,
+  background: themes[mode].Color.Background.Neutral[0].Background,
+  surface: themes[mode].Color.Background.Accent[0].Background,
+  primary: themes[mode].Color.Background.Accent[0].Background,
+  secondary: themes[mode].Color.Background.Accent[0].Background,
+  info: themes[mode].Color.Status.Info.Primary.Background,
+  error: themes[mode].Color.Status.Error.Primary.Background,
+  success: themes[mode].Color.Status.Success.Primary.Background,
+  warning: themes[mode].Color.Status.Warning.Primary.Background,
 });
 
 // Generates a background-foreground pair for the specific key
