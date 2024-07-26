@@ -15,11 +15,7 @@
       "require": "./dist/components.umd.cjs",
       "types": "./dist/main.d.ts"
     },
-    "./style": "./dist/style.css",
-    "./vuetify": {
-      "default": "./dist/vuetify/svipper-theme.ts",
-      "types": "./dist/vuetify/svipper-theme.d.ts"
-    }
+    "./style": "./dist/style.css"
   },
   "eslintConfig": {
     "extends": "../../.eslintrc"
@@ -42,13 +38,10 @@
     "vite": "^5.3.1",
     "vite-plugin-dts": "^4.0.0-beta.0"
   },
-  "dependencies": {
-    "@fluentui/tokens": "^1.0.0-alpha.16",
-    "@fluentui/web-components": "3.0.0-beta.47",
-    "@tfk-samf/tokens": "0.2.0"
-  },
-  "optionalDependencies": {
-    "vuetify": "^3.6.11"
+  "peerDependencies": {
+    "@tfk-samf/tokens": "0.2.0",
+    "vuetify": "^3.6.11",
+    "vue": "^3.4.34"
   },
   "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4"
 }

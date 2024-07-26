@@ -1,4 +1,17 @@
 {
-  "ios": {},
-  "android": {}
+    "iOS": {
+        "value": "SF Pro Text",
+        "type": "fontFamily",
+        "prefix": "typography"
+    },
+    "Android": {
+        "value": "Roboto",
+        "type": "fontFamily",
+        "prefix": "typography"
+    },
+    "Web": {
+        "value": "Inter, sans-serif",
+        "type": "fontFamily",
+        "prefix": "typography"
+    }
 }

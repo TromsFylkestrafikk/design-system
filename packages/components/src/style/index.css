@@ -1,0 +1,5 @@
+@import url('./font/inter.css');
+
+* {
+    font-family: var(--typography-web);
+}
