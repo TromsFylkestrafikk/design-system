@@ -6,13 +6,11 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/components.umd.cjs",
   "module": "./dist/components.js",
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/components.js",
-      "require": "./dist/components.umd.cjs",
       "types": "./dist/main.d.ts"
     },
     "./style": "./dist/style.css"
@@ -22,7 +20,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && copyfiles -u 1 ./src/vuetify/svipper-theme.ts dist",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.tsx .",
     "lint:fix": "eslint --ext .ts,.tsx --fix ."
@@ -31,7 +29,6 @@
     "@types/node": "^20.14.10",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
-    "copyfiles": "^2.4.1",
     "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "typescript": "^5.2.2",
@@ -39,9 +36,9 @@
     "vite-plugin-dts": "^4.0.0-beta.0"
   },
   "peerDependencies": {
-    "@tfk-samf/tokens": "0.2.0",
-    "vuetify": "^3.6.11",
-    "vue": "^3.4.34"
+    "@tfk-samf/tokens": "~0.2.0",
+    "vue": "~3.4.34",
+    "vuetify": "~3.3.0"
   },
   "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4"
 }
