@@ -1,6 +1,6 @@
 import {
   RGB, RGBA,
-  LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse
+  LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
 } from '@figma/rest-api-spec';
 
 /**
@@ -37,13 +37,13 @@ export type PluginAPIProps = {
 
 type OptionalExcept<T, K extends keyof T> = Pick<T, K> & Partial<T>
 export type DesignTokenType = 'color' | 'number' | 'fontFamily' | 'boolean'
-export type FigmaTokenType = LocalVariable["resolvedType"]
+export type FigmaTokenType = LocalVariable['resolvedType']
 const figmaDesignTokenTypeMap: Record<FigmaTokenType, DesignTokenType> = {
-  'COLOR': 'color',
-  'FLOAT': 'number',
-  'STRING': 'fontFamily',
-  'BOOLEAN': 'boolean'
-}
+  COLOR: 'color',
+  FLOAT: 'number',
+  STRING: 'fontFamily',
+  BOOLEAN: 'boolean',
+};
 export type DesignToken = {
   type: DesignTokenType
   value: string | number | boolean | RGB | CompositeToken
@@ -239,7 +239,7 @@ async function collectionAsJSON(
       resolvedType,
       valuesByMode,
     } = (await getVariableById(variableId))!;
-    
+
     for (const mode of modeKeys) {
       // Do not nest if there is only one mode
       let obj = isMultiMode ? collection[mode] : collection;

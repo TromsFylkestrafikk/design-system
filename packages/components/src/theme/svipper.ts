@@ -4,7 +4,12 @@ import { themes } from '@tfk-samf/tokens/ts';
 type Mode = 'Light' | 'Dark'
 
 // Mapping from Vuetify variable to design token
-const VuetifyMap = (mode: Mode): Record<string, { Background: string, Foreground: { Primary: string } }> => ({
+const VuetifyMap = (mode: Mode): Record<string, {
+    Background: string,
+    Foreground: {
+      Primary: string
+    }
+  }> => ({
   background: themes[mode].Color.Background.Neutral[0],
   surface: themes[mode].Color.Background.Accent[0],
   primary: themes[mode].Color.Background.Accent[0],

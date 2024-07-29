@@ -15,10 +15,10 @@ export default defineConfig({
     },
     rollupOptions: {
       external: [
-        "vuetify",
-        "vue",
-        "@tfk-samf/tokens"
-      ]
+        'vuetify',
+        'vue',
+        '@tfk-samf/tokens',
+      ],
     },
   },
 });
