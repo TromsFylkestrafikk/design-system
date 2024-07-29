@@ -1,7 +1,7 @@
 {
   "name": "@tfk-samf/components",
   "version": "0.3.0",
-  "description": "Web components used for applications in Troms County.",
+  "description": "Vue components used for applications in Troms County.",
   "type": "module",
   "files": [
     "dist"
@@ -40,5 +40,8 @@
     "vue": "~3.4.34",
     "vuetify": "~3.3.0"
   },
-  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4"
+  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4",
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  }
 }

@@ -20,7 +20,8 @@ import "@tfk-samf/components/style"
 import App from './App.vue'
 import { createApp } from 'vue'
 
-const tfk = createTfkApp()
+// Vuetify config can be extended by passing options
+const tfk = createTfkApp({})
 
 createApp(App).use(tfk).mount('#app')
 
@@ -43,4 +44,31 @@ Then import the individual icon in your Vue component and use it in `<v-icon>`
 <template>
     <v-icon :icon="mdiAccount" />
 </template>
+```
+
+## Default Vuetify config
+
+```ts
+{
+    theme: {
+        themes: {
+            SvipperDark,
+            SvipperLight,
+        },
+    },
+    locale: {
+        locale: 'no',
+        messages: {
+            // Adds Nynorsk support
+            nno
+        },
+    },
+    icons: {
+        defaultSet: 'mdi',
+        aliases,
+        sets: {
+            mdi,
+        },
+    },
+}
 ```
