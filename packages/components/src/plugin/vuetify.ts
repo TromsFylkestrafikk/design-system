@@ -8,7 +8,7 @@ import { nno } from '../translations/nno';
 import 'vuetify/styles';
 
 const makeVuetifyConfig = (options?: Partial<Parameters<typeof createVuetify>[0]>) => createVuetify(
-  merge(options, {
+  merge({
     theme: {
       themes: {
         SvipperDark,
@@ -28,7 +28,7 @@ const makeVuetifyConfig = (options?: Partial<Parameters<typeof createVuetify>[0]
         mdi,
       },
     },
-  }),
+  }, options),
 );
 
 export { makeVuetifyConfig };
