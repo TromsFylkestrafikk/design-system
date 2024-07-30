@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/figma-dtcg-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": "true",
   "description": "Exports Figma variables into separate JSON files per collection and modes grouped in a .zip file for easy download.",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@tfk-samf/figma-to-dtcg": "0.2.0"
+    "@tfk-samf/figma-to-dtcg": "^0.3.0"
   },
   "devDependencies": {
     "@figma/eslint-plugin-figma-plugins": "*",
@@ -31,34 +31,6 @@
     "vite-plugin-singlefile": "^2.0.2"
   },
   "eslintConfig": {
-    "extends": [
-      "airbnb-base",
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:@figma/figma-plugins/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
-    "root": true,
-    "rules": {
-      "no-restricted-syntax": "off",
-      "no-await-in-loop": "off",
-      "no-labels": "off",
-      "no-continue": "off",
-      "no-console": "off",
-      "no-underscore-dangle": "off",
-      "no-use-before-define": "off",
-      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_",
-          "caughtErrorsIgnorePattern": "^_"
-        }
-      ]
-    }
+    "extends": "../../.eslintrc"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "atb": {
+  "svia": {
     "Gray": {
       "0": {
         "Background": {
@@ -19,7 +19,7 @@
       },
       "50": {
         "Background": {
-          "value": "#eef3f6",
+          "value": "#f1f2f2",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -35,7 +35,7 @@
       },
       "100": {
         "Background": {
-          "value": "#e1e7eb",
+          "value": "#e3e5e6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -51,7 +51,7 @@
       },
       "150": {
         "Background": {
-          "value": "#d5dce0",
+          "value": "#d5d7d9",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -242,10 +242,26 @@
         }
       }
     },
-    "Green": {
+    "Blue": {
+      "50": {
+        "Background": {
+          "value": "#e6e9f9",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
       "100": {
         "Background": {
-          "value": "#e5e8b8",
+          "value": "#b0baec",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -261,7 +277,7 @@
       },
       "200": {
         "Background": {
-          "value": "#c9cf6b",
+          "value": "#8a98e3",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -277,15 +293,15 @@
       },
       "300": {
         "Background": {
-          "value": "#a2ad00",
+          "value": "#546ad6",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -293,15 +309,15 @@
       },
       "400": {
         "Background": {
-          "value": "#909a00",
+          "value": "#334dce",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -309,15 +325,15 @@
       },
       "500": {
         "Background": {
-          "value": "#757d00",
+          "value": "#0020c2",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -325,7 +341,7 @@
       },
       "600": {
         "Background": {
-          "value": "#5b6100",
+          "value": "#001db1",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -341,7 +357,7 @@
       },
       "700": {
         "Background": {
-          "value": "#464a00",
+          "value": "#00178a",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -357,7 +373,7 @@
       },
       "800": {
         "Background": {
-          "value": "#323600",
+          "value": "#00126b",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -373,7 +389,169 @@
       },
       "900": {
         "Background": {
-          "value": "#1f2100",
+          "value": "#000d51",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      }
+    },
+    "Green": {
+      "50": {
+        "Background": {
+          "value": "#f7fff4",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "100": {
+        "Background": {
+          "value": "#f3ffee",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "200": {
+        "Background": {
+          "value": "#e7ffdd",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "300": {
+        "Background": {
+          "value": "#b2ff90",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "400": {
+        "Background": {
+          "value": "#a0e682",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "500": {
+        "Background": {
+          "value": "#8ecc73",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "600": {
+        "Background": {
+          "value": "#86bf6c",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "700": {
+        "Background": {
+          "value": "#6b9956",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "800": {
+        "Background": {
+          "value": "#507341",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "900": {
+        "Background": {
+          "value": "#3e5932",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -391,7 +569,7 @@
     "Cyan": {
       "50": {
         "Background": {
-          "value": "#def5f8",
+          "value": "#f2feff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -407,7 +585,7 @@
       },
       "100": {
         "Background": {
-          "value": "#bfedf1",
+          "value": "#ecfeff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -423,7 +601,7 @@
       },
       "200": {
         "Background": {
-          "value": "#71d6e0",
+          "value": "#d7fdff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -439,7 +617,7 @@
       },
       "300": {
         "Background": {
-          "value": "#62bac3",
+          "value": "#7ff9ff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -455,7 +633,7 @@
       },
       "400": {
         "Background": {
-          "value": "#539ca4",
+          "value": "#72e0e6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -471,7 +649,7 @@
       },
       "500": {
         "Background": {
-          "value": "#448086",
+          "value": "#66c7cc",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -487,7 +665,7 @@
       },
       "600": {
         "Background": {
-          "value": "#356569",
+          "value": "#5fbbbf",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -503,15 +681,15 @@
       },
       "700": {
         "Background": {
-          "value": "#294d51",
+          "value": "#4c9599",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -519,7 +697,7 @@
       },
       "800": {
         "Background": {
-          "value": "#1d383a",
+          "value": "#397073",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -535,153 +713,7 @@
       },
       "900": {
         "Background": {
-          "value": "#122224",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Blue": {
-      "100": {
-        "Background": {
-          "value": "#d4e9ec",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#a6d1d9",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#75b8c4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#429eae",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#007c92",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#006678",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#004e5c",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#003943",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#002329",
+          "value": "#2c5759",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -697,9 +729,25 @@
       }
     },
     "Burgundy": {
+      "50": {
+        "Background": {
+          "value": "#fdecf6",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
       "100": {
         "Background": {
-          "value": "#e8e3e6",
+          "value": "#fce3f2",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -715,7 +763,7 @@
       },
       "200": {
         "Background": {
-          "value": "#d0c7ce",
+          "value": "#f9c5e3",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -731,7 +779,7 @@
       },
       "300": {
         "Background": {
-          "value": "#b7a9b3",
+          "value": "#ec43a6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -747,7 +795,7 @@
       },
       "400": {
         "Background": {
-          "value": "#a08e9b",
+          "value": "#d43c95",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -763,15 +811,15 @@
       },
       "500": {
         "Background": {
-          "value": "#867080",
+          "value": "#bd3685",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -779,7 +827,7 @@
       },
       "600": {
         "Background": {
-          "value": "#6f5468",
+          "value": "#b1327d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -795,7 +843,7 @@
       },
       "700": {
         "Background": {
-          "value": "#5b3c53",
+          "value": "#8e2864",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -811,7 +859,7 @@
       },
       "800": {
         "Background": {
-          "value": "#4b2942",
+          "value": "#6a1e4b",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -827,7 +875,201 @@
       },
       "900": {
         "Background": {
-          "value": "#2c1827",
+          "value": "#53173a",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      }
+    },
+    "Orange": {
+      "50": {
+        "Background": {
+          "value": "#fdeee7",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "100": {
+        "Background": {
+          "value": "#f8ccb5",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "200": {
+        "Background": {
+          "value": "#f4b392",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "300": {
+        "Background": {
+          "value": "#f09060",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "400": {
+        "Background": {
+          "value": "#e85912",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "500": {
+        "Background": {
+          "value": "#d24600",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "600": {
+        "Background": {
+          "value": "#bf4000",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "700": {
+        "Background": {
+          "value": "#953200",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "800": {
+        "Background": {
+          "value": "#742700",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "900": {
+        "Background": {
+          "value": "#4f1e06",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "950": {
+        "Background": {
+          "value": "#401805",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "1000": {
+        "Background": {
+          "value": "#301204",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -845,7 +1087,7 @@
     "Yellow": {
       "50": {
         "Background": {
-          "value": "#fbf9da",
+          "value": "#fffde9",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -861,7 +1103,7 @@
       },
       "100": {
         "Background": {
-          "value": "#f0e973",
+          "value": "#fffcde",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -877,7 +1119,7 @@
       },
       "200": {
         "Background": {
-          "value": "#e4d700",
+          "value": "#fff8bb",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -893,7 +1135,7 @@
       },
       "300": {
         "Background": {
-          "value": "#c6ae00",
+          "value": "#ffe924",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -909,7 +1151,7 @@
       },
       "400": {
         "Background": {
-          "value": "#af9000",
+          "value": "#e6d220",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -925,7 +1167,7 @@
       },
       "500": {
         "Background": {
-          "value": "#977000",
+          "value": "#ccba1d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -941,15 +1183,15 @@
       },
       "600": {
         "Background": {
-          "value": "#815200",
+          "value": "#bfaf1b",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -957,15 +1199,15 @@
       },
       "700": {
         "Background": {
-          "value": "#6f3a00",
+          "value": "#998c16",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -973,7 +1215,7 @@
       },
       "800": {
         "Background": {
-          "value": "#5c2000",
+          "value": "#736910",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -989,153 +1231,7 @@
       },
       "900": {
         "Background": {
-          "value": "#460200",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Orange": {
-      "100": {
-        "Background": {
-          "value": "#f5e1d4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#eac1a5",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#dea076",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#d27c41",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#c75b12",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#97450e",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#73350a",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#542608",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#341805",
+          "value": "#59520d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1153,7 +1249,7 @@
     "Red": {
       "50": {
         "Background": {
-          "value": "#f4e1e7",
+          "value": "#fae8e8",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1169,7 +1265,7 @@
       },
       "100": {
         "Background": {
-          "value": "#eed2db",
+          "value": "#eeb7b7",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1185,7 +1281,7 @@
       },
       "200": {
         "Background": {
-          "value": "#e4b8c6",
+          "value": "#e69495",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1201,7 +1297,7 @@
       },
       "300": {
         "Background": {
-          "value": "#d692a7",
+          "value": "#db6364",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1217,7 +1313,7 @@
       },
       "400": {
         "Background": {
-          "value": "#c76b89",
+          "value": "#d44546",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1233,15 +1329,15 @@
       },
       "500": {
         "Background": {
-          "value": "#b74166",
+          "value": "#c91618",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -1249,7 +1345,7 @@
       },
       "600": {
         "Background": {
-          "value": "#a51140",
+          "value": "#b71416",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1265,7 +1361,7 @@
       },
       "700": {
         "Background": {
-          "value": "#7d0d31",
+          "value": "#8f1011",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1281,7 +1377,7 @@
       },
       "800": {
         "Background": {
-          "value": "#5c0a24",
+          "value": "#6f0c0d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1297,7 +1393,7 @@
       },
       "900": {
         "Background": {
-          "value": "#380616",
+          "value": "#54090a",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1313,7 +1409,7 @@
       }
     }
   },
-  "reis": {
+  "svipper": {
     "Gray": {
       "0": {
         "Background": {
@@ -1333,7 +1429,7 @@
       },
       "50": {
         "Background": {
-          "value": "#eef3f6",
+          "value": "#f1f2f2",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1349,7 +1445,7 @@
       },
       "100": {
         "Background": {
-          "value": "#e1e7eb",
+          "value": "#e3e5e6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1365,7 +1461,7 @@
       },
       "150": {
         "Background": {
-          "value": "#d5dce0",
+          "value": "#d5d7d9",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1556,10 +1652,26 @@
         }
       }
     },
-    "Green": {
+    "Blue": {
+      "50": {
+        "Background": {
+          "value": "#e6e9f9",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
       "100": {
         "Background": {
-          "value": "#e5e8b8",
+          "value": "#b0baec",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1575,7 +1687,7 @@
       },
       "200": {
         "Background": {
-          "value": "#c9cf6b",
+          "value": "#8a98e3",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1591,15 +1703,15 @@
       },
       "300": {
         "Background": {
-          "value": "#a2ad00",
+          "value": "#546ad6",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -1607,15 +1719,15 @@
       },
       "400": {
         "Background": {
-          "value": "#909a00",
+          "value": "#334dce",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -1623,15 +1735,15 @@
       },
       "500": {
         "Background": {
-          "value": "#757d00",
+          "value": "#0020c2",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -1639,7 +1751,7 @@
       },
       "600": {
         "Background": {
-          "value": "#5b6100",
+          "value": "#001db1",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1655,7 +1767,7 @@
       },
       "700": {
         "Background": {
-          "value": "#464a00",
+          "value": "#00178a",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1671,7 +1783,7 @@
       },
       "800": {
         "Background": {
-          "value": "#323600",
+          "value": "#00126b",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1687,7 +1799,169 @@
       },
       "900": {
         "Background": {
-          "value": "#1f2100",
+          "value": "#000d51",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      }
+    },
+    "Green": {
+      "50": {
+        "Background": {
+          "value": "#f7fff4",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "100": {
+        "Background": {
+          "value": "#f3ffee",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "200": {
+        "Background": {
+          "value": "#e7ffdd",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "300": {
+        "Background": {
+          "value": "#b2ff90",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "400": {
+        "Background": {
+          "value": "#a0e682",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "500": {
+        "Background": {
+          "value": "#8ecc73",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "600": {
+        "Background": {
+          "value": "#86bf6c",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "700": {
+        "Background": {
+          "value": "#6b9956",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "800": {
+        "Background": {
+          "value": "#507341",
+          "type": "color",
+          "prefix": "color_palette"
+        },
+        "Foreground": {
+          "value": {
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
+          },
+          "type": "color",
+          "prefix": "color_palette"
+        }
+      },
+      "900": {
+        "Background": {
+          "value": "#3e5932",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1705,7 +1979,7 @@
     "Cyan": {
       "50": {
         "Background": {
-          "value": "#def5f8",
+          "value": "#f2feff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1721,7 +1995,7 @@
       },
       "100": {
         "Background": {
-          "value": "#bfedf1",
+          "value": "#ecfeff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1737,7 +2011,7 @@
       },
       "200": {
         "Background": {
-          "value": "#71d6e0",
+          "value": "#d7fdff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1753,7 +2027,7 @@
       },
       "300": {
         "Background": {
-          "value": "#62bac3",
+          "value": "#7ff9ff",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1769,7 +2043,7 @@
       },
       "400": {
         "Background": {
-          "value": "#539ca4",
+          "value": "#72e0e6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1785,7 +2059,7 @@
       },
       "500": {
         "Background": {
-          "value": "#448086",
+          "value": "#66c7cc",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1801,7 +2075,7 @@
       },
       "600": {
         "Background": {
-          "value": "#356569",
+          "value": "#5fbbbf",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1817,15 +2091,15 @@
       },
       "700": {
         "Background": {
-          "value": "#294d51",
+          "value": "#4c9599",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -1833,7 +2107,7 @@
       },
       "800": {
         "Background": {
-          "value": "#1d383a",
+          "value": "#397073",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -1849,153 +2123,7 @@
       },
       "900": {
         "Background": {
-          "value": "#122224",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Blue": {
-      "100": {
-        "Background": {
-          "value": "#d4e9ec",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#a6d1d9",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#75b8c4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#429eae",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#007c92",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#006678",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#004e5c",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#003943",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#002329",
+          "value": "#2c5759",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2011,155 +2139,9 @@
       }
     },
     "Burgundy": {
-      "100": {
-        "Background": {
-          "value": "#e8e3e6",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#d0c7ce",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#b7a9b3",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#a08e9b",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#867080",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#6f5468",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#5b3c53",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#4b2942",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#2c1827",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Yellow": {
       "50": {
         "Background": {
-          "value": "#fbf9da",
+          "value": "#fdecf6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2175,7 +2157,7 @@
       },
       "100": {
         "Background": {
-          "value": "#f0e973",
+          "value": "#fce3f2",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2191,7 +2173,7 @@
       },
       "200": {
         "Background": {
-          "value": "#e4d700",
+          "value": "#f9c5e3",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2207,7 +2189,7 @@
       },
       "300": {
         "Background": {
-          "value": "#c6ae00",
+          "value": "#ec43a6",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2223,7 +2205,7 @@
       },
       "400": {
         "Background": {
-          "value": "#af9000",
+          "value": "#d43c95",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2239,15 +2221,15 @@
       },
       "500": {
         "Background": {
-          "value": "#977000",
+          "value": "#bd3685",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -2255,7 +2237,7 @@
       },
       "600": {
         "Background": {
-          "value": "#815200",
+          "value": "#b1327d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2271,7 +2253,7 @@
       },
       "700": {
         "Background": {
-          "value": "#6f3a00",
+          "value": "#8e2864",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2287,7 +2269,7 @@
       },
       "800": {
         "Background": {
-          "value": "#5c2000",
+          "value": "#6a1e4b",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2303,7 +2285,7 @@
       },
       "900": {
         "Background": {
-          "value": "#460200",
+          "value": "#53173a",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2319,155 +2301,9 @@
       }
     },
     "Orange": {
-      "100": {
-        "Background": {
-          "value": "#f5e1d4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#eac1a5",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#dea076",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#d27c41",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#c75b12",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#97450e",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#73350a",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#542608",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#341805",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Red": {
       "50": {
         "Background": {
-          "value": "#f4e1e7",
+          "value": "#fdeee7",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2483,7 +2319,7 @@
       },
       "100": {
         "Background": {
-          "value": "#eed2db",
+          "value": "#f8ccb5",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2499,7 +2335,7 @@
       },
       "200": {
         "Background": {
-          "value": "#e4b8c6",
+          "value": "#f4b392",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2515,7 +2351,7 @@
       },
       "300": {
         "Background": {
-          "value": "#d692a7",
+          "value": "#f09060",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2531,7 +2367,7 @@
       },
       "400": {
         "Background": {
-          "value": "#c76b89",
+          "value": "#e85912",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2547,15 +2383,15 @@
       },
       "500": {
         "Background": {
-          "value": "#b74166",
+          "value": "#d24600",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -2563,7 +2399,7 @@
       },
       "600": {
         "Background": {
-          "value": "#a51140",
+          "value": "#bf4000",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2579,7 +2415,7 @@
       },
       "700": {
         "Background": {
-          "value": "#7d0d31",
+          "value": "#953200",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2595,7 +2431,7 @@
       },
       "800": {
         "Background": {
-          "value": "#5c0a24",
+          "value": "#742700",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2611,219 +2447,7 @@
       },
       "900": {
         "Background": {
-          "value": "#380616",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    }
-  },
-  "fram": {
-    "Gray": {
-      "0": {
-        "Background": {
-          "value": "#ffffff",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "50": {
-        "Background": {
-          "value": "#eef3f6",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "100": {
-        "Background": {
-          "value": "#e1e7eb",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "150": {
-        "Background": {
-          "value": "#d5dce0",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#c7cacc",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#a9aeb1",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#8d9398",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#6f777d",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#555e65",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#37424a",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#2b343a",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "850": {
-        "Background": {
-          "value": "#242b30",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#1a2024",
+          "value": "#4f1e06",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2839,7 +2463,7 @@
       },
       "950": {
         "Background": {
-          "value": "#101315",
+          "value": "#401805",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -2855,607 +2479,7 @@
       },
       "1000": {
         "Background": {
-          "value": "#000000",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Green": {
-      "100": {
-        "Background": {
-          "value": "#e5e8b8",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#c9cf6b",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#a2ad00",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#909a00",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#757d00",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#5b6100",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#464a00",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#323600",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#1f2100",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Cyan": {
-      "50": {
-        "Background": {
-          "value": "#def5f8",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "100": {
-        "Background": {
-          "value": "#bfedf1",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#71d6e0",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#62bac3",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#539ca4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#448086",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#356569",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#294d51",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#1d383a",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#122224",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Blue": {
-      "100": {
-        "Background": {
-          "value": "#d4e9ec",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#a6d1d9",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#75b8c4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#429eae",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#007c92",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#006678",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#004e5c",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#003943",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#002329",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Burgundy": {
-      "100": {
-        "Background": {
-          "value": "#e8e3e6",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#d0c7ce",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#b7a9b3",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#a08e9b",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#867080",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#6f5468",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#5b3c53",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#4b2942",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#2c1827",
+          "value": "#301204",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3473,7 +2497,7 @@
     "Yellow": {
       "50": {
         "Background": {
-          "value": "#fbf9da",
+          "value": "#fffde9",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3489,7 +2513,7 @@
       },
       "100": {
         "Background": {
-          "value": "#f0e973",
+          "value": "#fffcde",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3505,7 +2529,7 @@
       },
       "200": {
         "Background": {
-          "value": "#e4d700",
+          "value": "#fff8bb",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3521,7 +2545,7 @@
       },
       "300": {
         "Background": {
-          "value": "#c6ae00",
+          "value": "#ffe924",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3537,7 +2561,7 @@
       },
       "400": {
         "Background": {
-          "value": "#af9000",
+          "value": "#e6d220",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3553,7 +2577,7 @@
       },
       "500": {
         "Background": {
-          "value": "#977000",
+          "value": "#ccba1d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3569,15 +2593,15 @@
       },
       "600": {
         "Background": {
-          "value": "#815200",
+          "value": "#bfaf1b",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -3585,15 +2609,15 @@
       },
       "700": {
         "Background": {
-          "value": "#6f3a00",
+          "value": "#998c16",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
+            "Primary": "{Foreground.Dark.Primary}",
+            "Secondary": "{Foreground.Dark.Secondary}",
+            "Disabled": "{Foreground.Dark.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -3601,7 +2625,7 @@
       },
       "800": {
         "Background": {
-          "value": "#5c2000",
+          "value": "#736910",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3617,153 +2641,7 @@
       },
       "900": {
         "Background": {
-          "value": "#460200",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      }
-    },
-    "Orange": {
-      "100": {
-        "Background": {
-          "value": "#f5e1d4",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "200": {
-        "Background": {
-          "value": "#eac1a5",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "300": {
-        "Background": {
-          "value": "#dea076",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "400": {
-        "Background": {
-          "value": "#d27c41",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "500": {
-        "Background": {
-          "value": "#c75b12",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "600": {
-        "Background": {
-          "value": "#97450e",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "700": {
-        "Background": {
-          "value": "#73350a",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "800": {
-        "Background": {
-          "value": "#542608",
-          "type": "color",
-          "prefix": "color_palette"
-        },
-        "Foreground": {
-          "value": {
-            "Primary": "{Foreground.Light.Primary}",
-            "Secondary": "{Foreground.Light.Secondary}",
-            "Disabled": "{Foreground.Light.Disabled}"
-          },
-          "type": "color",
-          "prefix": "color_palette"
-        }
-      },
-      "900": {
-        "Background": {
-          "value": "#341805",
+          "value": "#59520d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3781,7 +2659,7 @@
     "Red": {
       "50": {
         "Background": {
-          "value": "#f4e1e7",
+          "value": "#fae8e8",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3797,7 +2675,7 @@
       },
       "100": {
         "Background": {
-          "value": "#eed2db",
+          "value": "#eeb7b7",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3813,7 +2691,7 @@
       },
       "200": {
         "Background": {
-          "value": "#e4b8c6",
+          "value": "#e69495",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3829,7 +2707,7 @@
       },
       "300": {
         "Background": {
-          "value": "#d692a7",
+          "value": "#db6364",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3845,7 +2723,7 @@
       },
       "400": {
         "Background": {
-          "value": "#c76b89",
+          "value": "#d44546",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3861,15 +2739,15 @@
       },
       "500": {
         "Background": {
-          "value": "#b74166",
+          "value": "#c91618",
           "type": "color",
           "prefix": "color_palette"
         },
         "Foreground": {
           "value": {
-            "Primary": "{Foreground.Dark.Primary}",
-            "Secondary": "{Foreground.Dark.Secondary}",
-            "Disabled": "{Foreground.Dark.Disabled}"
+            "Primary": "{Foreground.Light.Primary}",
+            "Secondary": "{Foreground.Light.Secondary}",
+            "Disabled": "{Foreground.Light.Disabled}"
           },
           "type": "color",
           "prefix": "color_palette"
@@ -3877,7 +2755,7 @@
       },
       "600": {
         "Background": {
-          "value": "#a51140",
+          "value": "#b71416",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3893,7 +2771,7 @@
       },
       "700": {
         "Background": {
-          "value": "#7d0d31",
+          "value": "#8f1011",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3909,7 +2787,7 @@
       },
       "800": {
         "Background": {
-          "value": "#5c0a24",
+          "value": "#6f0c0d",
           "type": "color",
           "prefix": "color_palette"
         },
@@ -3925,7 +2803,7 @@
       },
       "900": {
         "Background": {
-          "value": "#380616",
+          "value": "#54090a",
           "type": "color",
           "prefix": "color_palette"
         },

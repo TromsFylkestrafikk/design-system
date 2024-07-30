@@ -1,29 +1,74 @@
 # Component Library for Troms County
 
-This package provides components as building blocks to build web applications. Components are based on the [Shoelace](https://shoelace.style) web components.
+This package wraps the Vuetify package to provide components in the Troms County style as building blocks to build web applications. 
 
-## Integration with Vuetify
+## Getting started
 
-A legacy mode is provided in form of a Vuetify theme located at `@tfk-samf/components/vuetify`. This can be enabled by importing it into Vuetify in your `App.vue`.
+Create a Vue application. Install `@tfk-samf/components` using the `npm i` command
 
-```ts
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
-
-// Import the themes
-import { SvipperDark, SvipperLight } from '@tfk-samf/components/vuetify'
-
-import { createVuetify } from 'vuetify'
-
-export default createVuetify({
-  theme: {
-    // Register the themes
-    defaultTheme: 'SvipperDark',
-    themes: {
-      SvipperDark,
-      SvipperLight
-    }
-  },
-})
+```sh
+npm i @tfk-samf/components
 ```
 
+Configure and use the package in your `main.ts`.
+
+
+```ts
+import { createTfkApp } from '@tfk-samf/components'
+import "@tfk-samf/components/style"
+
+import App from './App.vue'
+import { createApp } from 'vue'
+
+// Vuetify config can be extended by passing options
+const tfk = createTfkApp({})
+
+createApp(App).use(tfk).mount('#app')
+
+```
+
+## Using icons in your app
+
+By default, only the icons required by Vuetify are bundled in the package. If you want to add your own icons, you can do so by installing Material Design Icons (MDI) as a dev dependency locally. Install the ES Module version of MDI like so.
+
+`npm install @mdi/js -D`
+
+Then import the individual icon in your Vue component and use it in `<v-icon>`
+
+```vue
+<script setup>
+    import { VIcon } from '@tfk-samf/components'
+    import { mdiAccount } from '@mdi/js'
+</script>
+
+<template>
+    <v-icon :icon="mdiAccount" />
+</template>
+```
+
+## Default Vuetify config
+
+```ts
+{
+    theme: {
+        themes: {
+            SvipperDark,
+            SvipperLight,
+        },
+    },
+    locale: {
+        locale: 'no',
+        messages: {
+            // Adds Nynorsk support
+            nno
+        },
+    },
+    icons: {
+        defaultSet: 'mdi',
+        aliases,
+        sets: {
+            mdi,
+        },
+    },
+}
+```
