@@ -48,24 +48,24 @@
         },
         "1": {
           "value": {
-            "Background": "{Gray.100.Background}",
-            "Foreground": "{Gray.100.Foreground}"
+            "Background": "{Gray.50.Background}",
+            "Foreground": "{Gray.50.Foreground}"
           },
           "type": "color",
           "prefix": "color"
         },
         "2": {
           "value": {
-            "Background": "{Gray.200.Background}",
-            "Foreground": "{Gray.200.Foreground}"
+            "Background": "{Gray.100.Background}",
+            "Foreground": "{Gray.100.Foreground}"
           },
           "type": "color",
           "prefix": "color"
         },
         "3": {
           "value": {
-            "Background": "{Gray.100.Background}",
-            "Foreground": "{Gray.100.Foreground}"
+            "Background": "{Gray.200.Background}",
+            "Foreground": "{Gray.200.Foreground}"
           },
           "type": "color",
           "prefix": "color"

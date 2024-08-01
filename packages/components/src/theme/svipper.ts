@@ -11,9 +11,14 @@ const VuetifyMap = (mode: Mode): Record<string, {
     }
   }> => ({
   background: themes[mode].Color.Background.Neutral[0],
-  surface: themes[mode].Color.Background.Accent[0],
-  primary: themes[mode].Color.Background.Accent[0],
-  secondary: themes[mode].Color.Background.Accent[0],
+  surface: themes[mode].Color.Background.Neutral[0],
+  'surface-bright': themes[mode].Color.Background.Neutral[1],
+  'surface-light': themes[mode].Color.Background.Neutral[3],
+  'surface-variant': themes[mode].Color.Background.Accent[2],
+  primary: themes[mode].Color_palette.Orange[500],
+  'primary-darken-1': themes[mode].Color_palette.Orange[900],
+  secondary: themes[mode].Color_palette.Blue[400],
+  'secondary-darken-1': themes[mode].Color_palette.Blue[700],
   info: themes[mode].Color.Status.Info.Primary,
   error: themes[mode].Color.Status.Error.Primary,
   success: themes[mode].Color.Status.Success.Primary,
