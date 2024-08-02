@@ -36,9 +36,9 @@
     "vite-plugin-dts": "^4.0.0-beta.0"
   },
   "peerDependencies": {
-    "@tfk-samf/tokens": "~0.3.0",
-    "vue": "~3.4.34",
-    "vuetify": "~3.3.0"
+    "@tfk-samf/tokens": "^0.3.1",
+    "vue": "^3.4.34",
+    "vuetify": "^3.3.0"
   },
   "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4",
   "dependencies": {
