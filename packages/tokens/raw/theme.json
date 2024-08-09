@@ -449,7 +449,7 @@
       }
     },
     "Transport": {
-      "Region": {
+      "City": {
         "Primary": {
           "value": {
             "Background": "{Blue.400.Background}",
@@ -467,7 +467,7 @@
           "prefix": "color"
         }
       },
-      "City": {
+      "Region": {
         "Primary": {
           "value": {
             "Background": "{Green.700.Background}",
@@ -628,6 +628,18 @@
           "type": "color",
           "prefix": "color"
         }
+      }
+    },
+    "Zone": {
+      "From": {
+        "value": "#ffffff",
+        "type": "color",
+        "prefix": "color"
+      },
+      "To": {
+        "value": "#ffffff",
+        "type": "color",
+        "prefix": "color"
       }
     }
   },
@@ -1081,7 +1093,7 @@
       }
     },
     "Transport": {
-      "Region": {
+      "City": {
         "Primary": {
           "value": {
             "Background": "{Blue.400.Background}",
@@ -1099,7 +1111,7 @@
           "prefix": "color"
         }
       },
-      "City": {
+      "Region": {
         "Primary": {
           "value": {
             "Background": "{Green.700.Background}",
@@ -1260,6 +1272,18 @@
           "type": "color",
           "prefix": "color"
         }
+      }
+    },
+    "Zone": {
+      "From": {
+        "value": "#ffffff",
+        "type": "color",
+        "prefix": "color"
+      },
+      "To": {
+        "value": "#ffffff",
+        "type": "color",
+        "prefix": "color"
       }
     }
   }
