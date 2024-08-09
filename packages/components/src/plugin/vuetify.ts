@@ -1,4 +1,5 @@
 import { createVuetify } from 'vuetify';
+import { no } from 'vuetify/locale';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 import merge from 'deepmerge';
 import { SvipperDark, SvipperLight } from '../theme/svipper';
@@ -22,6 +23,7 @@ const makeVuetifyConfig = (options?: Partial<Parameters<typeof createVuetify>[0]
     locale: {
       locale: 'no',
       messages: {
+        no,
         nno,
       },
     },
