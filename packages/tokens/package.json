@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/tokens",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Design tokens are the source of truth for design decisions in Troms county.",
   "type": "module",
   "files": [
