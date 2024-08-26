@@ -13,6 +13,7 @@ import colorPalette from '../raw/color_palette.json';
 import spacing from '../raw/spacing.json';
 import theme from '../raw/theme.json';
 import typography from '../raw/typography.json';
+import icon from '../raw/icon.json';
 
 const srcDir = 'raw';
 const outDir = 'dist';
@@ -28,6 +29,7 @@ const makeTokens = (organization: Organization, mode: Mode) => ({
   ...border,
   ...typography,
   ...spacing,
+  ...icon,
 } as DesignTokens);
 
 /**

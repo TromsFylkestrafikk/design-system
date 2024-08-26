@@ -55,7 +55,7 @@ export type Token = DesignToken | CompositeToken
 export type Tree = Token | { [key: string]: Tree };
 export type Node = Exclude<Tree, Token>
 
-export type GenericCollection = 'border' | 'spacing' | 'typography'
+export type GenericCollection = 'border' | 'spacing' | 'typography' | 'icon'
 export type OrganisationCollection = 'color_palette' | 'theme'
 export type TokenType = GenericCollection & OrganisationCollection
 export type Organization = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'svipper'
