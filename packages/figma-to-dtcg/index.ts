@@ -157,7 +157,7 @@ async function valueToJSON(
 
   const isForeground = (
     { name: _name }: LocalVariable,
-  ): boolean => !!_name.match(/^Foreground\/(Dark|Light)\/(Primary|Secondary|Disabled)$/);
+  ): boolean => !!_name.match(/^Foreground\/([\w\s]+)\/(Primary|Secondary|Disabled)$/);
 
   const isColorPalette = (
     { name: _name }: LocalVariable,
