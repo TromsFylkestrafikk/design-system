@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/components",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Vue components used for applications in Troms County.",
   "type": "module",
   "files": [
