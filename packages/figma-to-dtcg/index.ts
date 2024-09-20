@@ -168,7 +168,12 @@ async function valueToJSON(
   // If the variable is a reference to another variable
   if (isAlias(value)) {
     // Get the referenced variable
-    const variable = (await getVariableById(value.id))!;
+    const variable = (await getVariableById(value.id));
+    if (!variable) {
+      console.warn(`Missing alias definiton for ${name}. Your Figma file might contain variables with a definition outside of the file. Skipping...`);
+      return 'null';
+    }
+
     const alias = `{${variable.name.replace(/\//g, '.')}}`;
 
     _value = alias;
