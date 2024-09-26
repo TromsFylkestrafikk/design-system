@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/figma-dtcg-plugin",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": "true",
   "description": "Exports Figma variables.",
   "main": "dist/index.js",
