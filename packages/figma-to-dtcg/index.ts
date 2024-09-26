@@ -35,6 +35,10 @@ export type PluginAPIProps = {
   client: PluginAPI
 }
 
+export type Options = {
+  verbosity?: 'silent' | 'verbose'
+}
+
 type OptionalExcept<T, K extends keyof T> = Pick<T, K> & Partial<T>
 export type DesignTokenType = 'color' | 'number' | 'fontFamily' | 'boolean'
 export type FigmaTokenType = LocalVariable['resolvedType']
@@ -66,6 +70,8 @@ export type Tokens = {
   [genCol in GenericCollection]?: Tree
 }
 
+let globalOptions: Options = {};
+const isVerbose = () => globalOptions.verbosity === 'verbose';
 let getVariableById: (id: string) => Promise<LocalVariable>;
 
 /**
@@ -150,7 +156,7 @@ async function valueToJSON(
   name: string,
   value: VariableValue,
   type: LocalVariable['resolvedType'],
-): Promise<DesignToken['value']> {
+): Promise<DesignToken['value'] | undefined> {
   const isAlias = (
     v: VariableValue,
   ): v is VariableAlias => !!(v as VariableAlias).type && !!(v as VariableAlias).id;
@@ -170,8 +176,10 @@ async function valueToJSON(
     // Get the referenced variable
     const variable = (await getVariableById(value.id));
     if (!variable) {
-      console.warn(`Missing alias definiton for ${name}. Your Figma file might contain variables with a definition outside of the file. Skipping...`);
-      return 'null';
+      if (isVerbose()) {
+        console.warn(`Missing alias definiton for ${name}. Your Figma file might contain variables with a definition outside of the file. Skipping...`);
+      }
+      return undefined;
     }
 
     const alias = `{${variable.name.replace(/\//g, '.')}}`;
@@ -243,7 +251,15 @@ async function collectionAsJSON(
       name,
       resolvedType,
       valuesByMode,
+      remote,
     } = (await getVariableById(variableId))!;
+
+    if (remote) {
+      if (isVerbose()) {
+        console.warn(`Skipping remote variable ${name}`);
+      }
+      continue;
+    }
 
     for (const mode of modeKeys) {
       // Do not nest if there is only one mode
@@ -252,7 +268,14 @@ async function collectionAsJSON(
 
       if (value !== undefined && ['COLOR', 'FLOAT', 'STRING'].includes(resolvedType)) {
         const groups = name.split('/');
-        if (groups.some((group) => isPrivate(group))) continue variables;
+        const objValue = await valueToJSON(name, value, resolvedType);
+
+        if (
+          groups.some((group) => isPrivate(group))
+          || !objValue
+        ) {
+          continue variables;
+        }
 
         groups.forEach((groupName) => {
           obj = obj as Node;
@@ -260,7 +283,7 @@ async function collectionAsJSON(
           obj = obj[groupName];
         });
 
-        obj.value = await valueToJSON(name, value, resolvedType);
+        obj.value = objValue;
         obj.type = figmaDesignTokenTypeMap[resolvedType];
         obj.prefix = collectionPrefix;
       }
@@ -276,7 +299,9 @@ async function collectionAsJSON(
  * @param props
  * @returns `{ tokens }` Design Tokens in W3C spec
  */
-async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
+async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps, options: Options = { verbosity: 'silent' }) {
+  globalOptions = options;
+
   const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
 
   getVariableById = isRestApiEnv(props)
@@ -287,10 +312,14 @@ async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps) {
     : await props.client.variables.getLocalVariableCollectionsAsync();
 
   const tree: Tree = {};
-  const { idToKey } = uniqueKeyIdMaps(collections, 'id');
 
   for (const collection of collections) {
-    const name = idToKey[collection.id];
+    if (collection.remote) {
+      if (isVerbose()) console.warn(`Skipping remote collection ${collection.name}`);
+      continue;
+    }
+
+    const name = sanitizeName(collection.name);
 
     // Skip this collection if private
     if (isPrivate(name)) continue;
