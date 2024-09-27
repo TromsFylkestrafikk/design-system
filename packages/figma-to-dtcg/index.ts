@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import {
   RGB, RGBA,
   LocalVariableCollection, VariableValue, LocalVariable, VariableAlias, GetLocalVariablesResponse,
@@ -59,15 +61,16 @@ export type Token = DesignToken | CompositeToken
 export type Tree = Token | { [key: string]: Tree };
 export type Node = Exclude<Tree, Token>
 
-export type GenericCollection = 'border' | 'spacing' | 'typography' | 'icon'
-export type OrganisationCollection = 'color_palette' | 'theme'
-export type TokenType = GenericCollection & OrganisationCollection
-export type Organization = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'svipper'
-export type Mode = 'light' | 'dark'
-export type Theme = `${Organization}_${Mode}` | Organization
-export type Tokens = {
-  [orgCol in OrganisationCollection]?: { [theme in Theme]?: Tree } } & {
-  [genCol in GenericCollection]?: Tree
+export type Tokens<
+  Themes extends string,
+  Variants extends string,
+  SharedCollections extends string,
+  InvariantCollections extends string,
+  VariantCollections extends string
+> = {
+  [sc in SharedCollections]?: Tree } & {
+  [ic in InvariantCollections]?: { [theme in Themes]?: Tree } } & {
+  [vc in VariantCollections]?: { [theme in `${Themes}_${Variants}`]?: Tree }
 }
 
 let globalOptions: Options = {};
@@ -296,10 +299,39 @@ async function collectionAsJSON(
  * Provides Design Tokens from a given Figma instance
  * using either Figma Variables Rest API or the Plugin API.
  *
+ * **Typing of the returned Tokens object using generics**
+ *
+ * 1. Themes = keys of the available themes
+ *
+ * Example: type Themes = "normal" | "halloween" | "easter"
+ *
+ * 2. Variants = keys of variants for each theme
+ *
+ * Example: type Variants = "light" | "dark"
+ *
+ * 3. SharedCollections = Keys of collections that do not change across themes
+ *
+ * example: "border" | "spacing"
+ *
+ * 4. InvariantCollections = Keys of collections that do not change according to variant of a theme,
+ * but change across themes
+ *
+ * Example: "color_palette"
+ *
+ * 5. VariantCollections = Keys of collections that change according to theme variant
+ *
+ * Example: "themes"
+ *
  * @param props
  * @returns `{ tokens }` Design Tokens in W3C spec
  */
-async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps, options: Options = { verbosity: 'silent' }) {
+async function useFigmaToDTCG<
+  Themes extends string = any,
+  Variants extends string = any,
+  SharedCollections extends string = any,
+  InvariantCollections extends string = any,
+  VariantCollections extends string = any
+>(props: RestAPIProps | PluginAPIProps, options: Options = { verbosity: 'silent' }) {
   globalOptions = options;
 
   const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
@@ -328,7 +360,13 @@ async function useFigmaToDTCG(props: RestAPIProps | PluginAPIProps, options: Opt
   }
 
   return {
-    tokens: tree as Tokens,
+    tokens: tree as Tokens<
+      Themes,
+      Variants,
+      SharedCollections,
+      InvariantCollections,
+      VariantCollections
+    >,
   };
 }
 

@@ -5,7 +5,6 @@
  *
  */
 import { useFigmaToDTCG } from '@tfk-samf/figma-to-dtcg';
-import type { TokenType } from '@tfk-samf/figma-to-dtcg';
 
 console.clear();
 console.log('------------------- Console cleared by Design Tokens (W3C) Export -------------------');
@@ -33,7 +32,7 @@ async function exportFiles() {
     api: 'plugin',
     client: figma,
   });
-  const collections = Object.keys(tokens) as TokenType[];
+  const collections = Object.keys(tokens);
 
   type FileName = string
   const zipContent: Record<FileName, string> = {};
