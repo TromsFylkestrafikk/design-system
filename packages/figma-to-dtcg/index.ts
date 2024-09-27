@@ -133,6 +133,7 @@ function isPrivate(collection: string) {
 function uniqueKeyIdMaps<T extends OptionalExcept<LocalVariableCollection, 'name'>, K extends keyof T, F extends T[K] &(string | number | symbol)>(nodesWithNames: T[], idKey: K) {
   const idToKey: Record<F, string> = {} as Record<F, string>;
   const keyToId: Record<string, T[K]> = {};
+
   nodesWithNames.forEach((node) => {
     const key = sanitizeName(node.name);
     let int = 2;
@@ -144,6 +145,7 @@ function uniqueKeyIdMaps<T extends OptionalExcept<LocalVariableCollection, 'name
     keyToId[uniqueKey] = node[idKey];
     idToKey[node[idKey] as F] = uniqueKey;
   });
+
   return { idToKey, keyToId };
 }
 
