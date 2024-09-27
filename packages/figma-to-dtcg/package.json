@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/figma-to-dtcg",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Parse Figma Variables Plugin API and REST API into design tokens.",
   "files": [
     "dist"
