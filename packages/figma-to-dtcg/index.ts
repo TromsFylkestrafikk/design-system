@@ -37,19 +37,14 @@ export type PluginAPIProps = {
   client: PluginAPI
 }
 
-export type Options = {
-  verbosity?: 'silent' | 'verbose'
+export type Options<Collection> = {
+  verbosity?: 'silent' | 'verbose',
+  typeMap?: Record<FigmaTokenType, (category: Collection) => string>
 }
 
 type OptionalExcept<T, K extends keyof T> = Pick<T, K> & Partial<T>
 export type DesignTokenType = 'color' | 'number' | 'fontFamily' | 'boolean'
 export type FigmaTokenType = LocalVariable['resolvedType']
-const figmaDesignTokenTypeMap: Record<FigmaTokenType, DesignTokenType> = {
-  COLOR: 'color',
-  FLOAT: 'number',
-  STRING: 'fontFamily',
-  BOOLEAN: 'boolean',
-};
 export type DesignToken = {
   type: DesignTokenType
   value: string | number | boolean | RGB | CompositeToken
@@ -73,8 +68,18 @@ export type Tokens<
   [vc in VariantCollections]?: { [theme in `${Themes}_${Variants}`]?: Tree }
 }
 
-let globalOptions: Options = {};
+let globalOptions: Required<Options<any>>;
+const defaultOptions: typeof globalOptions = {
+  verbosity: 'silent',
+  typeMap: {
+    COLOR: () => 'color',
+    FLOAT: () => 'number',
+    STRING: () => 'fontFamily',
+    BOOLEAN: () => 'boolean',
+  },
+};
 const isVerbose = () => globalOptions.verbosity === 'verbose';
+
 let getVariableById: (id: string) => Promise<LocalVariable>;
 
 /**
@@ -289,7 +294,7 @@ async function collectionAsJSON(
         });
 
         obj.value = objValue;
-        obj.type = figmaDesignTokenTypeMap[resolvedType];
+        obj.type = globalOptions.typeMap[resolvedType](sanitizeName(collectionName));
         obj.prefix = collectionPrefix;
       }
     }
@@ -333,8 +338,14 @@ async function useFigmaToDTCG<
   SharedCollections extends string = any,
   InvariantCollections extends string = any,
   VariantCollections extends string = any
->(props: RestAPIProps | PluginAPIProps, options: Options = { verbosity: 'silent' }) {
-  globalOptions = options;
+>(
+  props: RestAPIProps | PluginAPIProps,
+  options?: Options<SharedCollections | InvariantCollections | VariantCollections>,
+) {
+  globalOptions = {
+    ...defaultOptions,
+    ...options,
+  } as Required<Options<SharedCollections | InvariantCollections | VariantCollections>>;
 
   const isRestApiEnv = (p: typeof props): p is RestAPIProps => p.api === 'rest';
 
