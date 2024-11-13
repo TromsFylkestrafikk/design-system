@@ -1,3 +1,6 @@
+> ⚠️ This package will soon be deprecated since `@atb-as/theme` now 
+> provides the same features in the same formats.
+
 # Design Tokens
 
 Design tokens are the source of truth for design decisions. This package exports compiled design tokens for different stacks in the form of variables, such as CSS Custom Properties and TypeScript objects.
