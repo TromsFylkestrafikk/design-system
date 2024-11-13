@@ -1,4 +1,4 @@
-import '@tfk-samf/tokens/css';
+import '@atb-as/theme/lib/generated/themes-fs/troms-theme/theme.css';
 import './style/index.css';
 
 import type { Plugin } from 'vue';

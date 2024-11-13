@@ -1,52 +1,54 @@
 import type { ThemeDefinition } from 'vuetify';
-import { themes } from '@tfk-samf/tokens/ts';
+import { createThemesFor, ThemeVariant } from '@atb-as/theme';
 
-type Mode = 'Light' | 'Dark'
+const themes = createThemesFor(ThemeVariant.Troms, {
+  useFigmaStructure: true
+})
+
+type Mode = 'light' | 'dark'
 
 // Mapping from Vuetify variable to design token
 const VuetifyMap = (mode: Mode): Record<string, {
-    Background: string,
-    Foreground: {
-      Primary: string
+    background: string,
+    foreground: {
+      primary: string
     }
   }> => ({
-  background: themes[mode].Color.Background.Neutral[0],
-  surface: themes[mode].Color.Background.Neutral[0],
-  'surface-bright': themes[mode].Color.Background.Neutral[1],
-  'surface-light': themes[mode].Color.Background.Neutral[3],
-  'surface-variant': themes[mode].Color.Background.Accent[2],
-  primary: themes[mode].Color_palette.Orange[500],
-  'primary-darken-1': themes[mode].Color_palette.Orange[900],
-  secondary: themes[mode].Color_palette.Blue[400],
-  'secondary-darken-1': themes[mode].Color_palette.Blue[700],
-  info: themes[mode].Color.Status.Info.Primary,
-  error: themes[mode].Color.Status.Error.Primary,
-  success: themes[mode].Color.Status.Success.Primary,
-  warning: themes[mode].Color.Status.Warning.Primary,
+  background: themes[mode].color.background.neutral[0],
+  surface: themes[mode].color.background.neutral[0],
+  'surface-bright': themes[mode].color.background.neutral[1],
+  'surface-light': themes[mode].color.background.neutral[3],
+  'surface-variant': themes[mode].color.background.accent[2],
+  primary: themes[mode].color.background.accent[0],
+  secondary: themes[mode].color.transport.city.secondary,
+  info: themes[mode].color.status.info.primary,
+  error: themes[mode].color.status.error.primary,
+  success: themes[mode].color.status.valid.primary,
+  warning: themes[mode].color.status.warning.primary,
 });
 
 // Generates a background-foreground pair for the specific key
-const generateColorPair = (mode: Mode, key: string): Record<string, string> => ({
-  [key]: VuetifyMap(mode)[key].Background,
-  [`on-${key}`]: VuetifyMap(mode)[key].Foreground.Primary,
+const generatecolorPair = (mode: Mode, key: string): Record<string, string> => ({
+  [key]: VuetifyMap(mode)[key].background,
+  [`on-${key}`]: VuetifyMap(mode)[key].foreground.primary,
 });
 
 const getVuetifyThemeVars = (mode: Mode) => {
   const keys = Object.keys(VuetifyMap(mode));
 
   return keys.reduce((acc, key) => ({
-    ...acc, ...generateColorPair(mode, key),
+    ...acc, ...generatecolorPair(mode, key),
   }), {} as Record<string, string>);
 };
 
 const SvipperLight: ThemeDefinition = {
   dark: false,
-  colors: getVuetifyThemeVars('Light'),
+  colors: getVuetifyThemeVars('light'),
 };
 
 const SvipperDark: ThemeDefinition = {
   dark: true,
-  colors: getVuetifyThemeVars('Dark'),
+  colors: getVuetifyThemeVars('dark'),
 };
 
 export { SvipperDark, SvipperLight };

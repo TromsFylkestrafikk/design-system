@@ -5,9 +5,21 @@ import { createVuetify } from 'vuetify';
 
 type ThemeMode = 'dark' | 'light' | 'auto'
 
+const getCurrentMode = (classList: DOMTokenList): ThemeMode => {
+  if (classList.contains('light')) {
+    return 'light'
+  }
+
+  if (classList.contains('dark')) {
+    return 'dark'
+  }
+
+  return 'auto'
+} 
+
 /**
  * Decides which theme should be active given the `prefers-color-scheme`
- * and `data-theme="..."` parameters and sets that specific theme on the
+ * and `class` parameters and sets that specific theme on the
  * Vuetify instance.
  *
  * @param vuetifyInstance The Vuetify instance for this app
@@ -15,17 +27,16 @@ type ThemeMode = 'dark' | 'light' | 'auto'
  */
 export const useDynamicTheme = (vuetifyInstance: ReturnType<typeof createVuetify>) => {
   // Theme setting from the documentElement
-  const dataTheme = ref<ThemeMode>(document.documentElement.getAttribute('data-theme') as ThemeMode);
+  const configuredTheme = ref<ThemeMode>(getCurrentMode(document.documentElement.classList) as ThemeMode);
 
   // If the user prefers color a color scheme
   const prefersColorSchemeRule = window.matchMedia('(prefers-color-scheme: dark)');
   const prefersColorScheme = ref<ThemeMode>(prefersColorSchemeRule.matches ? 'dark' : 'light');
 
-  // Event listener for `data-theme` attribute
+  // Event listener for `class` attribute
   const [mode, modeOptions] = [
-    new MutationObserver((mutationList) => {
-      if (mutationList[0].attributeName !== 'data-theme') return;
-      dataTheme.value = document.documentElement.getAttribute('data-theme') as ThemeMode;
+    new MutationObserver(() => {
+      configuredTheme.value = getCurrentMode(document.documentElement.classList);
     }), {
       childList: false,
       subtree: false,
@@ -36,7 +47,7 @@ export const useDynamicTheme = (vuetifyInstance: ReturnType<typeof createVuetify
 
   // The name of the current Vuetify theme
   const currentTheme = computed(() => {
-    const theme = dataTheme.value === 'auto' ? prefersColorScheme.value : dataTheme.value;
+    const theme = configuredTheme.value === 'auto' ? prefersColorScheme.value : configuredTheme.value;
     return theme === 'light' ? 'SvipperLight' : 'SvipperDark';
   });
 
