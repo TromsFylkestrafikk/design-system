@@ -1,5 +1,5 @@
-@import url('./font/inter.css');
+@import url("./font/inter.css");
 
 * {
-    font-family: var(--typography-web);
+  font-family: "Inter", sans-serif;
 }
