@@ -3,9 +3,11 @@ import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [dts({
-    include: ['./src/**/*'],
-  })],
+  plugins: [
+    dts({
+      include: ['./src/**/*'],
+    }),
+  ],
   build: {
     target: 'esnext',
     lib: {
@@ -14,11 +16,7 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: [
-        'vuetify',
-        'vue',
-        '@tfk-samf/tokens',
-      ],
+      external: ['vuetify', 'vue', '@atb-as/theme'],
     },
   },
 });

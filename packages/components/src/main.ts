@@ -1,19 +1,17 @@
-import '@tfk-samf/tokens/css';
-import './style/index.css';
-
 import type { Plugin } from 'vue';
 
 import { createVuetify } from 'vuetify';
+import { Themes } from '@atb-as/theme';
 import { useDynamicTheme } from './theme/useDynamicTheme';
 import { makeVuetifyConfig } from './plugin/vuetify';
 
-// Re-export everything from Vuetify for consistent
-export * from 'vuetify/components';
-export * from 'vuetify';
-export * from 'vuetify/directives';
+import './style/index.css';
 
-export const createTfkApp = (options: Parameters<typeof createVuetify>[0]): Plugin => {
-  const vuetify = makeVuetifyConfig(options);
+export const createOmsApp = (
+  themes: Themes,
+  options: Parameters<typeof createVuetify>[0],
+): Plugin => {
+  const vuetify = makeVuetifyConfig(themes, options);
   const { addThemeListeners, removeThemeListeners } = useDynamicTheme(vuetify);
 
   return {
