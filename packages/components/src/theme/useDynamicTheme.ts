@@ -68,11 +68,13 @@ export const useDynamicTheme = (
   };
 
   const addThemeListeners = () => {
-    nextTick(() => mode.observe(document.documentElement, modeOptions));
-    nextTick(() => prefersColorSchemeRule.addEventListener(
-      'change',
-      prefersColorSchemeCallback,
-    ));
+    nextTick(() => {
+      mode.observe(document.documentElement, modeOptions);
+      prefersColorSchemeRule.addEventListener(
+        'change',
+        prefersColorSchemeCallback,
+      );
+    });
   };
 
   const removeThemeListeners = () => {

@@ -17,16 +17,45 @@ const VUETIFY_THEME_KEYS = [
 ];
 
 // Mapping from Vuetify variable to design token
+// TODO: Replace hardcoded colors with variables from `theme` when available
 const VuetifyMap = (theme: Theme): Record<string, ContrastColor> => ({
   background: theme.color.background.neutral[0],
   surface: theme.color.background.neutral[0],
   'surface-bright': theme.color.background.neutral[1],
   'surface-light': theme.color.background.neutral[3],
   'surface-variant': theme.color.background.accent[2],
-  primary: theme.color.interactive[3].default,
-  'primary-darken-1': theme.color.interactive[3].hover,
-  secondary: theme.color.interactive[0].default,
-  'secondary-darken-1': theme.color.interactive[3].hover,
+  primary: {
+    background: '#E85912',
+    foreground: {
+      primary: '#000',
+      secondary: '#E3E5E6',
+      disabled: '#A9AEB1',
+    },
+  },
+  'primary-darken-1': {
+    background: '#D24600',
+    foreground: {
+      primary: '#FFF',
+      secondary: '#555E65',
+      disabled: '#A9AEB1',
+    },
+  },
+  secondary: {
+    background: '#334DCE',
+    foreground: {
+      primary: '#FFF',
+      secondary: '#555E65',
+      disabled: '#A9AEB1',
+    },
+  },
+  'secondary-darken-1': {
+    background: '#00178A',
+    foreground: {
+      primary: '#FFF',
+      secondary: '#555E65',
+      disabled: '#A9AEB1',
+    },
+  },
   info: theme.color.status.info.primary,
   error: theme.color.status.error.primary,
   success: theme.color.status.valid.primary,
