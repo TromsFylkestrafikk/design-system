@@ -2,7 +2,6 @@
   "name": "@tfk-samf/design-system",
   "workspaces": [
     "packages/components",
-    "packages/tokens",
     "packages/figma-to-dtcg",
     "packages/figma-dtcg-plugin"
   ],
