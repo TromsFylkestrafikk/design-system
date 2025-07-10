@@ -55,7 +55,7 @@ export const useDynamicTheme = (
   watch(
     currentTheme,
     () => {
-      vuetifyInstance.theme.global.name.value = currentTheme.value;
+      vuetifyInstance.theme.change(currentTheme.value);
     },
     {
       immediate: true,
