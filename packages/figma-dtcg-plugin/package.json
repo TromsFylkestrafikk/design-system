@@ -16,7 +16,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@tfk-samf/figma-to-dtcg": "^0.4.0"
+    "@tfk-samf/figma-to-dtcg": "^0.4.1"
   },
   "devDependencies": {
     "@figma/eslint-plugin-figma-plugins": "*",
