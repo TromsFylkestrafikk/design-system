@@ -118,6 +118,10 @@ function sanitizeName(name: string) {
     .toLowerCase();
 }
 
+function roundFloat(float: number, precision = 6): number {
+  return parseFloat(float.toFixed(precision));
+}
+
 /**
  * Checks if the name of a collection, group or variable is private.
  *
@@ -213,9 +217,12 @@ async function valueToJSON(
         Foreground: alias.replace('Background', 'Foreground'),
       };
     }
+  } else if (type === 'COLOR') {
+    _value = rgbToHex(value as RGBA);
+  } else if (type === 'FLOAT') {
+    _value = roundFloat(value as number);
   } else {
-    // Return an actual value if the variable is not a reference
-    _value = type === 'COLOR' ? rgbToHex(value as RGBA) : value as string;
+    _value = value as string;
   }
 
   return _value;

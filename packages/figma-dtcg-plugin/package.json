@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "npm run build:ui && npm run build:main -- --minify",
-    "build:main": "esbuild ./src/index.ts --bundle --outfile=dist/index.js",
+    "build:main": "esbuild ./src/index.ts --target=es2017 --bundle --outfile=dist/index.js",
     "build:ui": "vite build --minify esbuild --emptyOutDir=false",
     "lint": "eslint --ext .ts,.tsx --ignore-pattern node_modules .",
     "lint:fix": "eslint --ext .ts,.tsx --ignore-pattern node_modules --fix .",
@@ -16,7 +16,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@tfk-samf/figma-to-dtcg": "^0.3.6"
+    "@tfk-samf/figma-to-dtcg": "^0.4.0"
   },
   "devDependencies": {
     "@figma/eslint-plugin-figma-plugins": "*",
