@@ -64,9 +64,9 @@ export type Tokens<
   VariantCollections extends string
 > = {
   [sc in SharedCollections]?: Tree } & {
-  [ic in InvariantCollections]?: { [theme in Themes]?: Tree } } & {
-  [vc in VariantCollections]?: { [theme in `${Themes}_${Variants}`]?: Tree }
-}
+    [ic in InvariantCollections]?: { [theme in Themes]?: Tree } } & {
+    [vc in VariantCollections]?: { [theme in `${Themes}_${Variants}`]?: Tree }
+  }
 
 let globalOptions: Required<Options<any>>;
 const defaultOptions: typeof globalOptions = {
@@ -139,7 +139,7 @@ function isPrivate(collection: string) {
  * @param idKey The key of the id in the `nodesWithNames` parameter
  * @returns Functions that map from id to name and back
  */
-function uniqueKeyIdMaps<T extends OptionalExcept<LocalVariableCollection, 'name'>, K extends keyof T, F extends T[K] &(string | number | symbol)>(nodesWithNames: T[], idKey: K) {
+function uniqueKeyIdMaps<T extends OptionalExcept<LocalVariableCollection, 'name'>, K extends keyof T, F extends T[K] & (string | number | symbol)>(nodesWithNames: T[], idKey: K) {
   const idToKey: Record<F, string> = {} as Record<F, string>;
   const keyToId: Record<string, T[K]> = {};
 
@@ -289,7 +289,7 @@ async function collectionAsJSON(
 
         if (
           groups.some((group) => isPrivate(group))
-          || !objValue
+          || objValue === undefined
         ) {
           continue variables;
         }
