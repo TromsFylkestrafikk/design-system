@@ -1,6 +1,6 @@
 {
   "name": "@tfk-samf/figma-dtcg-plugin",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": "true",
   "description": "Exports Figma variables.",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@tfk-samf/figma-to-dtcg": "^0.4.1"
+    "@tfk-samf/figma-to-dtcg": "^0.4.2"
   },
   "devDependencies": {
     "@figma/eslint-plugin-figma-plugins": "*",
