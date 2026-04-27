@@ -32,7 +32,7 @@
     "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "typescript": "^5.2.2",
-    "vite": "^5.3.1",
+    "vite": "^8.0.10",
     "vite-plugin-dts": "^4.0.0-beta.0"
   },
   "peerDependencies": {
@@ -40,5 +40,8 @@
     "vue": "^3.5.17",
     "vuetify": "^3.9.0"
   },
-  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4"
+  "gitHead": "f2a3afa0b479e55c1b4524a35c9418303c7a0fe4",
+  "dependencies": {
+    "esbuild": "0.28.0"
+  }
 }
